@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/js/jquery-3.3.1.min.js"></script>
+    <script src="/public/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="/public/js/md5.js"></script>
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="login-ctn">
+            <h3 class="login-hd">
+                注册
+            </h3>
+            <form action="" method="post" class="login-bd form" name="loginForm" id="loginForm">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                    </span>
+                    <input type="text" class="form-control" placeholder="账号" name="account">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                    </span>
+                    <input type="password" class="form-control" placeholder="密码" name="password">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="imly-text"></span>
+                </div>
+                <div class="login-ft">
+                    <button class="btn btn-block btn-info btn-login" type="button">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var login = (function () {
+        var user = {
+            account: '',
+            password: ''
+        }, implyText = '';
+        var oForm, oAccount, oPassword, oLoginBtn, oImplyText;
+        function getDOM() {
+            oForm = document.getElementById('loginForm');
+            oAccount = oForm['account'];
+            oPassword = oForm['password'];
+            oLoginBtn = oForm.querySelector('.btn-login');
+            oImplyText = oForm.querySelector('.imly-text');
+        }
+        function addListener() {
+            oLoginBtn.addEventListener('click', loginValidate);
+        }
+        function init() {
+            getDOM();
+            addListener();
+        }
+        function check() {
+            if (oAccount.value == '') {
+                implyText = '账号不能为空！';
+                return false;
+            } else if (oPassword.value == '') {
+                implyText = '密码不能为空！';
+                return false;
+            } else {
+                user.account = oAccount.value;
+                user.password = hex_md5(oPassword.value);
+                implyText = '';
+                return true;
+            }
+        }
+        function loginValidate() {
+            console.log(user);
+            if (check()) {
+                $.ajax({
+                    url: '/api/register',
+                    type: 'POST',
+                    dataType: 'json',//预期服务器返回的数据类型
+                    data: user,
+                    success: function (res) {
+                        console.log('res', res);
+                        if(res.success){
+                            window.open('movies  ','_self');
+                        }else{
+                            oImplyText.innerText = res.msg;
+                        }
+                    }
+                })
+            } else {
+                oImplyText.innerText = implyText;
+            }
+        }
+        return {
+            init: init
+        }
+    })()
+    window.onload = function(){
+        login.init();
+       
+    }
+    function testAPI(){
+        $.ajax({
+            url:'/api/getAllMoives',
+            type:'post',
+            // data:{
+            //     title:'title',
+            //     director:'director',
+            //     rate:9.5,
+            //     year:2009,
+            //     quote:'quote'
+            // },
+            success:function(res){
+                console.log(res);
+            }
+        })
+    }
+</script>
+
+</html>

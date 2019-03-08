@@ -1,0 +1,1063 @@
+2019-03-05 17:09:06,684 ERROR 6905 [-/127.0.0.1/-/5ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.html from /home/sue/NodeProject/EggDemo/demo/app/view
+    at Map.resolve (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-view@2.1.2@egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 6905
+hostname: sue-OptiPlex-5060
+
+2019-03-05 17:28:00,599 WARN 8334 [-/127.0.0.1/-/28ms POST /login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-03-05 17:28:00,602 WARN 8334 [-/127.0.0.1/-/31ms POST /login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa@2.7.0@koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/app/extend/context.js:157:17)
+    at csrf (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at session (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-session@5.10.1@koa-session/index.js:41:13)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at overrideMethod (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-override@3.0.0@koa-override/index.js:38:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 8334
+hostname: sue-OptiPlex-5060
+
+2019-03-05 17:32:16,322 ERROR 9161 [-/127.0.0.1/-/9ms GET /] nodejs.AssertionError [ERR_ASSERTION]: Can't find viewEngine for /home/sue/NodeProject/EggDemo/demo/app/view/index.html
+    at ContextView.[contextView#render] (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-view@2.1.2@egg-view/lib/context_view.js:66:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: ""
+expected: true
+operator: "=="
+pid: 9161
+hostname: sue-OptiPlex-5060
+
+2019-03-06 09:51:47,558 ERROR 17066 [-/127.0.0.1/-/9ms GET /] nodejs.ReferenceError: reportTime is not defined
+    at /home/sue/NodeProject/EggDemo/demo/app/middleware/report.js:6:9
+
+pid: 17066
+hostname: sue-OptiPlex-5060
+
+2019-03-06 10:59:27,478 ERROR 23056 [-/127.0.0.1/-/35ms GET /] nodejs.ReferenceError: session is not defined
+    at /home/sue/NodeProject/EggDemo/demo/app/middleware/validateLogin.js:11:9
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_egg-development@2.4.2@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-i18n@2.0.0@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xframe (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/xframe.js:7:11)
+
+pid: 23056
+hostname: sue-OptiPlex-5060
+
+2019-03-06 11:00:22,906 ERROR 23093 [-/127.0.0.1/-/16ms GET /] nodejs.ReferenceError: session is not defined
+    at /home/sue/NodeProject/EggDemo/demo/app/middleware/validateLogin.js:11:9
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_egg-development@2.4.2@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-i18n@2.0.0@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at xframe (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/xframe.js:7:11)
+
+pid: 23093
+hostname: sue-OptiPlex-5060
+
+2019-03-06 11:09:00,875 ERROR 24017 [-/127.0.0.1/-/26ms GET /] nodejs.TypeError: Cannot read property '0' of undefined
+    at EggRouter.redirect (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:353:15)
+    at /home/sue/NodeProject/EggDemo/demo/app/middleware/validateLogin.js:16:20
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_egg-development@2.4.2@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-i18n@2.0.0@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 24017
+hostname: sue-OptiPlex-5060
+
+2019-03-06 11:20:32,888 ERROR 25239 [-/127.0.0.1/-/3ms GET /movies] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from /home/sue/NodeProject/EggDemo/demo/app/view
+    at Map.resolve (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-view@2.1.2@egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25239
+hostname: sue-OptiPlex-5060
+
+2019-03-06 11:21:13,954 ERROR 25312 [-/127.0.0.1/-/16ms GET /movies] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from /home/sue/NodeProject/EggDemo/demo/app/view
+    at Map.resolve (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-view@2.1.2@egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25312
+hostname: sue-OptiPlex-5060
+
+2019-03-06 11:21:14,659 ERROR 25312 [-/127.0.0.1/-/0ms GET /movies] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from /home/sue/NodeProject/EggDemo/demo/app/view
+    at Map.resolve (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-view@2.1.2@egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 25312
+hostname: sue-OptiPlex-5060
+
+2019-03-06 13:46:34,846 WARN 30021 [-/127.0.0.1/-/39ms POST /login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-03-06 13:46:34,851 WARN 30021 [-/127.0.0.1/-/43ms POST /login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa@2.7.0@koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/app/extend/context.js:157:17)
+    at csrf (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at session (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-session@5.10.1@koa-session/index.js:41:13)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at overrideMethod (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-override@3.0.0@koa-override/index.js:38:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 30021
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:07:37,449 WARN 2356 [-/127.0.0.1/-/8ms POST /login] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2019-03-06 15:07:37,450 WARN 2356 [-/127.0.0.1/-/9ms POST /login] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa@2.7.0@koa/lib/context.js:97:11)
+    at Object.assertCsrf (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/app/extend/context.js:157:17)
+    at csrf (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/csrf.js:31:9)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at session (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-session@5.10.1@koa-session/index.js:41:13)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at overrideMethod (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-override@3.0.0@koa-override/index.js:38:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2356
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:27:04,496 ERROR 5481 [-/127.0.0.1/-/30ms POST /api/login] nodejs.ReferenceError: request is not defined
+    at /home/sue/NodeProject/EggDemo/demo/app/middleware/validateLogin.js:15:9
+    at fn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/middleware.js:108:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_egg-development@2.4.2@egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at i18n (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-i18n@2.0.0@egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at dta (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 5481
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:31:57,140 ERROR 5955 [-/127.0.0.1/-/10ms POST /api/login] nodejs.TypeError: ctx.service.user.login is not a function
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:5:48)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 5955
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:32:31,204 ERROR 6026 [-/127.0.0.1/-/10ms POST /api/login] nodejs.TypeError: ctx.service.user.login is not a function
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:5:48)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 6026
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:35:32,001 ERROR 6159 [-/127.0.0.1/-/12ms POST /api/login] nodejs.TypeError: this.ctx.service.user.login is not a function
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:5:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 6159
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:35:46,725 ERROR 6230 [-/127.0.0.1/-/32ms POST /api/login] nodejs.TypeError: this.ctx.service.user.login is not a function
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:5:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 6230
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:36:47,761 ERROR 6290 [-/127.0.0.1/-/9ms POST /api/login] nodejs.TypeError: Cannot read property 'mysql' of undefined
+    at UserService.login (/home/sue/NodeProject/EggDemo/demo/app/service/user.js:6:32)
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:5:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 6290
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:42:50,175 ERROR 6677 [-/127.0.0.1/-/33ms POST /api/login] nodejs.ReferenceError: user is not defined
+    at UserService.login (/home/sue/NodeProject/EggDemo/demo/app/service/user.js:8:28)
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:5:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 6677
+hostname: sue-OptiPlex-5060
+
+2019-03-06 15:53:51,676 ERROR 7539 [-/127.0.0.1/-/41ms POST /api/login] nodejs.ReferenceError: tx is not defined
+    at UserController.login (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:16:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 7539
+hostname: sue-OptiPlex-5060
+
+2019-03-06 16:20:04,100 ERROR 10042 [-/undefined/-/3078ms POST /api/login] nodejs.EHOSTUNREACHError: connect EHOSTUNREACH 192.168.167.97:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1104:14)
+    --------------------
+    at Protocol._enqueue (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:48:16)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:56:34)
+    at Pool.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:202:8)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    sql: SELECT * FROM `user` WHERE `account` = 'water'
+errno: "EHOSTUNREACH"
+code: "EHOSTUNREACH"
+syscall: "connect"
+address: "192.168.167.97"
+port: 3306
+fatal: true
+headerSent: true
+name: "EHOSTUNREACHError"
+pid: 10042
+hostname: sue-OptiPlex-5060
+
+2019-03-06 16:20:04,101 ERROR 10042 [-/undefined/-/12519ms POST /api/login] nodejs.EHOSTUNREACHError: connect EHOSTUNREACH 192.168.167.97:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1104:14)
+    --------------------
+    at Protocol._enqueue (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:48:16)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:56:34)
+    at Pool.releaseConnection (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:157:10)
+    at Pool._removeConnection (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:277:8)
+    sql: SELECT * FROM `user` WHERE `account` = 'water'
+errno: "EHOSTUNREACH"
+code: "EHOSTUNREACH"
+syscall: "connect"
+address: "192.168.167.97"
+port: 3306
+fatal: true
+headerSent: true
+name: "EHOSTUNREACHError"
+pid: 10042
+hostname: sue-OptiPlex-5060
+
+2019-03-06 16:20:07,170 ERROR 10042 [-/127.0.0.1/-/579ms POST /api/login] nodejs.EHOSTUNREACHError: connect EHOSTUNREACH 192.168.167.97:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1104:14)
+    --------------------
+    at Protocol._enqueue (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:48:16)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:56:34)
+    at Pool.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:202:8)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    sql: SELECT * FROM `user` WHERE `account` = 'water'
+errno: "EHOSTUNREACH"
+code: "EHOSTUNREACH"
+syscall: "connect"
+address: "192.168.167.97"
+port: 3306
+fatal: true
+name: "EHOSTUNREACHError"
+pid: 10042
+hostname: sue-OptiPlex-5060
+
+2019-03-06 16:30:13,764 ERROR 10756 [-/127.0.0.1/-/18ms GET /movies] nodejs.ReferenceError: ctx is not defined
+    at MovieController.list (/home/sue/NodeProject/EggDemo/demo/app/controller/movies.js:7:5)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 10756
+hostname: sue-OptiPlex-5060
+
+2019-03-06 16:30:14,797 ERROR 10756 [-/127.0.0.1/-/3ms GET /movies] nodejs.ReferenceError: ctx is not defined
+    at MovieController.list (/home/sue/NodeProject/EggDemo/demo/app/controller/movies.js:7:5)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 10756
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:58:16,511 WARN 21293 [-/127.0.0.1/-/30ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21293
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:58:41,442 WARN 21293 [-/127.0.0.1/-/1ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21293
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:58:42,464 WARN 21345 [-/127.0.0.1/-/29ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21345
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:58:44,581 WARN 21345 [-/127.0.0.1/-/2ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21345
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:58:48,211 WARN 21345 [-/127.0.0.1/-/0ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21345
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:58:53,301 WARN 21345 [-/127.0.0.1/-/1ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21345
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:59:13,078 WARN 21368 [-/127.0.0.1/-/23ms POST /api/register] nodejs.Error: invalid JSON, only supports object and array
+    at parse (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:55:13)
+    at AsyncFunction.module.exports [as json] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co-body@6.0.0@co-body/lib/json.js:41:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+status: 400
+body: "account=test&password=e10adc3949ba59abbe56e057f20f883e"
+pid: 21368
+hostname: sue-OptiPlex-5060
+
+2019-03-07 10:59:58,144 ERROR 21368 [-/127.0.0.1/-/8ms POST /api/register] nodejs.ReferenceError: ctx is not defined
+    at UserController.register (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:4:25)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 21368
+hostname: sue-OptiPlex-5060
+
+2019-03-07 11:00:24,030 ERROR 21428 [-/127.0.0.1/-/11ms POST /api/register] nodejs.TypeError: Cannot read property 'insert' of undefined
+    at UserService.register (/home/sue/NodeProject/EggDemo/demo/app/service/user.js:7:34)
+    at UserController.register (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:4:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 21428
+hostname: sue-OptiPlex-5060
+
+2019-03-07 11:00:40,305 ERROR 21456 [-/127.0.0.1/-/35ms POST /api/register] nodejs.TypeError: Cannot read property 'insert' of undefined
+    at UserService.register (/home/sue/NodeProject/EggDemo/demo/app/service/user.js:7:34)
+    at UserController.register (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:4:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 21456
+hostname: sue-OptiPlex-5060
+
+2019-03-07 11:00:52,103 ERROR 21456 [-/127.0.0.1/-/3ms POST /api/register] nodejs.TypeError: Cannot read property 'insert' of undefined
+    at UserService.register (/home/sue/NodeProject/EggDemo/demo/app/service/user.js:7:34)
+    at UserController.register (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:4:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 21456
+hostname: sue-OptiPlex-5060
+
+2019-03-07 11:01:49,373 ERROR 21621 [-/127.0.0.1/-/29ms POST /api/register] nodejs.ReferenceError: result is not defined
+    at UserService.register (/home/sue/NodeProject/EggDemo/demo/app/service/user.js:8:32)
+    at UserController.register (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:4:53)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 21621
+hostname: sue-OptiPlex-5060
+
+2019-03-07 11:02:10,405 ERROR 21672 [-/127.0.0.1/-/36ms POST /api/register] nodejs.ReferenceError: ctx is not defined
+    at UserController.register (/home/sue/NodeProject/EggDemo/demo/app/controller/user.js:14:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21672
+hostname: sue-OptiPlex-5060
+
+2019-03-07 13:57:07,150 ERROR 30036 [-/127.0.0.1/-/53ms POST /api/insertMovie] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`��e4|�׸䴨��������a����yV�즦�-��' at line 1
+    at Query.Sequence._packetToError (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    --------------------
+    at Pool.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:199:23)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:12:10)
+    at Pool.ret [as query] (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:56:34)
+    at RDSClient.proto._query (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:65:19)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:54:5
+    sql: INSERT INTO `movie`(`------WebKitFormBoundaryffG5AGYhwK9ZuUkL
+Content-Disposition: form-data; name`, `^�~�����z������׼� ���j��-5��?��r��뷅�{<��W������?������W�g�?`, `ћF��-ke���<8��F��O�����{�u����#Z�s��s�`, `����0��~��X�� ���Ń�4�~�b��9��1��3��ȟ��q�bk)\�L�/����!�0�T�mg�Ҕ	�gu��jF��M
+������p�``�TP�Av���M��e�'�n���K�Io��`, `Q@
+ `, `�;^�?U��c�/:�>`, `���'?<��vh��Xe�`, `��e4|�׸䴨��������a����yV�즦�-���
+�``\ݠR�D��YKbT�qi��n!���ۥ$L;���%�1i)P��� ����l�i��,�F�)9��K�(�@۳'DY(��n``��,T�'�D����l�y�tT�ј�yWo��TYC8�|֏k%E\��H��?U��E� ^�q��m��n�\~O�U�C�끟f��E�y\�� {_��:�׉�C�� �O�q8�? 4:�~�o�*QysY0if�d��2��wRk ,3��X4 ��M�>�˞<��xщ�t���b��u��/W��z���Y���0J`, `�s��m`, `	��qލ0y��Ա@�d� `, `�L��!�����E� �{�7�׎C6�����mj���9;:��HrS�0�\V�%,���Y�C���Q��6�V��ҫ�g��@h�]����vJ0?��m��_͇�^���ʊ��i���/��`, `i��BZ �tM�oK���Qi�٘xC�U�,�#����8��R#O)������W�� L;{ͮ���� 1�xLIc�ה�hFHg�և��"��6���k����@������s�L�*5�`, `(���Z_#�zEZ_��bxD��O�R��ps��ݕ�IP�HqZl�(`, `d(6�`, `C�k�8 ���6m�r%|`, `4�v�؉5�V�����-�֙@�S��/�Wc��mL���f�������nݵ�j����� ��S'a�,b���ţ�g?�D�oRѐ��5����u�Iyy�f�PԌ�����`, `m9��3��FK	0����(n,�b����W>����80����`, `8�),-!L�5��s���H���U�C�Z�`, `z�TN�'���W��MWo,�k��P�76�K`, `��׻($o]9���u�?�``4kĀ5j��/��HZ��>ʧpP��fO�t�yG���'�;j[c�ܵ�pK@��a�9G�r��9d�	rk�d�[��"2PerE�ܵ�Ȫ�G41�޸E�  �?�6ے��D��%�t"���Y0�(4I�����w;��1Q8�K���:���6�1Fm�nW5dH��-L�3M���<�r �����R�T����oc�A-�u�l���`, `�r�M�*���-WR���ܟ��oL�l�V���D�v'���*	�;��^��n�R�Ss�o�	����`, `�r/�!��TR�C9��^�ˈr�|/7�4	(���j��O�L���ڌ����|]3�`, `4�ޑRB������<���	��q�:]�`, `�8�m�ґY01-�>�%�!``о�{2WA�\�@��0�wb�~-A)�S����%k5�I2%����\�Ma�Co�R˲x��JҞQ�dV���� ��8F2�y��ͬ j�Uf�r�)���v��o-Mq�>�o��J쌼6���r:``�ypi{ڐFBb:�u��e����	�~��%}S<!� {1S��o�I��dS$DVlZ}E��7;k)QV�ɖ6�H� '7��U�9$q�s��~��8��-���)��vj#~�c�
+�cڇ�ౖ-��,	BY?�%m��E��Ê9�1����s9����X�8<[?��`, `�U��1�M�sz�����Z,��v����1%�!�H�(�ғV�G!�g��}�o����� ���kY��~�H�S�ܞkў�P��k�rrs�uFqw��mhd/s��o���������	��BMC˭��'Aن6Q>b���q�u@�_JV�7�H��<jE��d��?Sr%��K:��x?���i�"({���Lg���T� B��{��e�1�i��```, `,;��|�i ���~!M<3$�"8G�~���{���|���CuH����d*-����:aêghR��R�9�qI
+3�0r`, `B?�2T#w�w�j̥���뿒�C�A��'%b�gC)��R�T�9\]�?G��3��M�]�`, `�z��2��a��ԃM �߲�z���(��`, `ގ�x0�x�>Yi��f�C�Vy5TN��J���D՗I�}�``v1�Ӫ��|M�ȭt�����<Ğ�o�N$1>{�-�x�Vҡ�iX��i�������'�� �; c8;W�����5v�/��h� �u�B�c'��H����9M�t/��p	��I���^��T-,�pb��r�����c;�^?N�3�9����1�b�/�e ��N�����W^��OԶ��%ay�oٞ�1�k�'�A~�;����	�;Y�B��(�G�F��j�ߘ�,�U��6�<s`, `s�Dk'���ue�HKS*����4o�\M���l(|å ��v���T���|�}��w�s`, `���6�� �n0 rUb�|�c�C���
+]WL�	�`, `EX0���3 �KT;����p`, `̓�[�`, `�d����T����TR|��<D`, `�߼H�����X�	 �!�f�֫�	�{X$���R� �D�p���
+��r@�q�m�x]��߂��{�DV����WX����QI�\	#�~``ϗ���6�����b��0-b������Χ�p�O#8��{<�C�@�S�ӱ���9�j�)#�)~��͘�n�]@xH	�H��m``���F�>��^P�8��d����z���oM~܄z��Lg���a������I�/߹p��Ojx`, `�x���hȉ��a�z:U/���[��eq��H*�� ��E?����ɜ�w� ��m*�A*��<q'�_o����d (i��ޡ�`, `�i���*�9�1���kv�Y�ii;ŖBvV��Oͥ�*�e�4ߊ��_5�F�'l��}�V#�ҍ��S�*�`, `R���۱��� �#S"�6���?��f������易��W���8��;�:˂b_ԙO���m��gJ �?��z2�S���je%����[��U�-�G ��r�o�慽mʯ ��6��4�(��9)5��N�fq�$�L����'_0֯h�� -p��T�h�x�4����a��R	�������M�[�܂kC��`, `�U��)��y�iN�9�u| ��c��*��te1�|���z��`, `2������h�uj���F��B���H̜����u\g�q��2�w��Ri��8�[[-��9^f4F��-Mow���Ro���D�X����gLu�����b�Y{:Bm����, �3*I�7ߠP��0�ܔw|10�6�!{c����[��k`, `���8��ӫ�e�R�m qϟ�|~�@��9��Q�Ds�$�7�90����4�^S�����n���X^J{1����8�U���E��R���Ns�]����R��`, `�g���]7����R�X���}����y}岡j��ct����b7�R�U ��]!��0_K���AM������g�e��q
+LjD�rr�~rT��� J�� �z�Fk��>��d�v��{�`, `��)%����7�\ܒ�bjh,z���V\HQƌ����t2*P��O̱�u4YL���s��f�"2�Βc��2����j˼|���Zj7�ؖ�,��J1�9\�Ʒ��� v����n᜚�a��Ѧ�_$�D�u_��e��4���i��>-�kw�e�S2�l�XWҼ�`, `v`, `�!��~��``Jy���wH;�H�]�,��������Z���b��sʥ��Y`, `����F��``�0�P�o8`, `���گ��%!5Q�H���� ���������x����}g�����2-S��6��C�_Na``�`, `�R���*����NT��ʍV� vA�)�d����o�z|��4�d��xb�A�]��S�F������T����e�G�� �P��C�\��h/���1A"ѱ��bJs/��](��gyj�5��Y5Иy��v�u���q������$�o�$
+M�i�`, `M�64\';2������`, `N�fަm��86���! ��*~�;�K��,l���C��W����Nq z���"]os��}��gGZ{ ������A1?1``l��텅|�}�u�U��8�c![��'��Kjp����K|}�����U`, `wM�}%�`, `֝`, `L{U�$A�� 7�c�WVǑ0``�}����s{�`, `~`, `�{B��n�o#�d30s:?Ğ���``��N�	
+��{5C��x��ܣ�^6�^�Xs748�A�-]��*u'!Qy���a:�FEr�>y�]:�R�"�j�h�F�l0^��[t!�Gk����%X`, `E_�ӰL�S�``Dd�~�;��'��`, `�D�?�˅�<�?����(?����1or��[D1߾U% ��_4
+w`, `>(KR�B��T�����Yս����a�b{¹W�j�`) VALUES('\"file\"; filename=\"p443461818.webp\"\r\nContent-Type: image/webp\r\n\r\nRIFF�;\0\0WEBPVP8 �;\0\0��\0�*�>�>�I%�\"$*Uː�\tcnt\\��uҪ��w���f�T�7����o�����g�����s����>|�|������?�?�', '[object Object]', '��{^�ў�@BI��\Zy~Gj���j\b]~Ugm���ѼA폭�^��=����|�r:%��PM��,%�a��{f�\"|��\n�����X�]��ŉ��*�t�!C��Y��}������$Ϟ�\b��%�?V��2��K�k@7�L��k������� �G�TϹ���\\��ga�=�M�f�%�z�T��PC�^�tS��\"y�b(�ctgv��i�L���42N�0xn�9��9\'*y�0ME�4š��� �o�?5Y\t�Wf��ґ7�B��B���E�,��V�o?�55X�1�\rf����)�[\r6�Jda��4���X���#E�-� �� ��P\ZA�@��UɊ6|���Z)�D���*É�� �:��ڍ��\0�\'T�E��IKL\0��I��3 A�!�%���H�:�N���Q���97���29��� ꘡', '', '\t�F�����A|�af/��\ZcH1k0u', '�3���f�����ʱSl�s��\0��<�<����\r!��[�����F,��\0I��\Z?~\r�S1�!\n��a���M��q����ym�\0B�/\0�����p�m=�e),���|H\'�7�XJo�W�t�br�F,WܪB]>1�', '[object Object]', '}����\b�mP\0<S���㴂eO��������#�����g���*K�wګב�-�L��j�2e�U���٣���EpE�C�`s��p�u�5G��)���H�L7��uw>*��#���@��\ts���V\ti���Z�2��~�r�l�<�DF%���(��4Xݵ.�˖�M7�|����X��\\��̃@`;��7�vy�޿g�掰�����x��(a\"��~�^��l�3��έ��Z.����1�M~�����!���/�\0\0��\'�\0��(�xQVے�_X�����i���焫1�M�<�:t`�r���p,76�#��/u������z�m\'g�h�20I�OA[����}�Wʪ�e�\"[\'8�\n�,���-���<9�%9�\"�nc�\t��W�ٛp|W?�)�}����/�oo�~��2��ɘ��Kmg�g��-hi7�4�DĲ�z�r.\n�w��jѮH�Y���m�Tt���?��\rR���i��B��\t�S !�������@ﻕ�zɟ ���4\'��ؚ���@�xEx�e�����Zf�_�����R�*Jc���}e���d�5��ߢ�n�S{��~�6)0dŲ�DO�<�؟\0#=ŀ', '[object Object]', '', '�8m�(�v������*L����~��\Z�Ah�y|#.0��[7�ۗzQ(S�hJ��u�2DJP�h�0Ikwx�_,N�X�Ly���7�=��^�ԳM���3P{n������\0�n�o�8EQp��ɹs7bۅ�{�,Y�u�<��@�2B�$_��_��τ��RMӿ`�߷��\Z>�Y��������䖎��PIYΖ�P���O�|��O�B�\0nk�x�҆y�bY��*���Z���G�uO����ES#��3�� �ʒ6��{X��ҩ m��dp@\0�H\0\0~��;��ا��ņ� �5Ĩn-s��􈸲D/6��\'\Z����a�����,!��ᐗe�\Z6TI;\'���[��)���t⒐��ܢ��k\\�=  �d��\0s�a�7Z�<���\n:���ړXt\0�$P��^;��f�3* .^���}��╨��Cg�I�ѐ�\r���9\'�A_ ��E�_�l�#QՅj��N��_�e���\nTd}�!i���v�9��P��2*!b���,pϐ�w���y4�m�ݸ_��ȖE����(\Z��br', '��,�\t@q�;�)��oJ8�y', 'ҴGu]L�,G�\"�8!n|\Z��u�.X����/��������N��_�l�\Z^S���ձ��UR?�\0\n��Q�����\n}\t��ڻ����˖��\0C���������4�.9A}�J*渊��j.0�S�\bAk���?:a��Y��v��,|�as�h��.�6���q�#1�_Z؏1of���,�I�u���ɐ�tՙx]Ms��N�����EM$)���)cwhmW��P2�eN���� ��#%�e^��_`��\"��Vjb-B�\'�)z�rG�O��і\t(ƀ�}�Qs ޫ�� ʞ��Z.ߖ~���5�����a�Ϧ�I>TT����ԁԈ�-|#\n/��\t�3� -������L�i���=����nFs���\'�쟠GV�Vڽ�ν�U��i5y�F-D3\r���ח����gF�\b���YTi}���C`�/���1���T蘡In���C��͗ �z����D1g��C�7��a�y(��UlSOF�<�9��j�3`��$\b��N�d�죳�����\"��L�H51�l�T�|GAT���i{���w�w4�l���g<1�vJ3VCl�^U_����?���?�W��DT�Q�\\��A�0�7�CT��!�v�ӭ�U��Ih���1Lz��IG��G��?����\"�Q#�n����q���\'_�1h@��BM�B��ʾv�ɧ�������UL@�{��z:Iϴ%wz�r��z��h���ڹ)�����<1B��������ڽ|[������ƽ8Q�>0��p����U��J�{�ϋ�n��d�2� � <%��r��?`������|�4Q\'�E������I7�f6��oG����T*qs�J��)%��v5/�a�s{T%��', 'w H\0[h�Q��^\Z��b\bs˛K� V����*���s!�o�7��۷ �����g��ґO���,7�$�D��\r~�b烱�-F�Jr$*�F��D�ڛ�gޗ\'�c�t8�1�D;����Do�5�m�34P�F*�\0M픂m���/���$0a�H������d�� x4%�2�����ƿwh~3��������\"A��2�a�L\0���%����\\�hJ', (''), '', '��޼�Z��Xč�', 'IϷ��厝�|��(�8޴[kj���\'��2��:ٟ߭���v{��l�~�$�71��^�沊�@�ū�����TSϢ��7���|�܈�E^��\b��oEhE�r�by풎����t� x��%����H��p%j��P\r�I1�U�?���\r�f�c�(��y�Yu��?�z7��\Z��_Wo��7��Xפ��B��ZT?���}Q�Y��H,�]o�@R�¥\rЛ�Z�t\\�qݡ�$�\\e3��9T�a֐ƌ�3�����Y�\\~Y��\0��-o8����h��i\b��۱�te���s��i����Cx`?Y�@{^���/0b�]����/M�', '', '', '', '', '[object Object]', '', 'JgLh p.�P���x@�\t=k�t��(BZ�[��7.����΅�����Q��W�-c%�qrH˾��I� �z�VD��y', '', '������/��Ho#���Lk`�Q2���>U5Y��0l���QV���-\r�F闃m޴u�rᱛ�S���6��np�pʄv����X�?�ٰa$mf4s��H8���ɴ�\'�\'[�A©`,�� ]�h�5�z����0\\1c\Z_��<��\b���M4��h����rn1���\'�����P2�', '', '', '[object Object]', '', '', '', '', '[object Object]', '', 'w�3���jXi\"��P��\Z��$���������A\bI���H�����OӛW��9ޏd��K�t[ToWtwC@\bBJ��e��(��r$���aS\b:�sA��V}Ѱ�-]�?���v�@g*ۖ\"��AXU�4\'->i� r6oT�BlK�\\�\'��g��*N�d\'%��{lH�s���rpZ,撌��.^s_�X��g���3/9���w\'���:��/��f��S�/�\r,A���\t�h�\n�A������3�\"�,����|Y����AL1��vS6����٠~l|�֎�F�Xf���zn[�%�s�N���-%�����P[�E�0ۡ��yɽ��}���]$g�{Z���y.��`u\0\'c�Ut�O�Ǯ�=C��k��b҄N��ñV�F�}V��D�(��x�!u��@�g$r��p�\0C����J����ﷶw�z~C39Q/�C�X��\0\'�Eh�u6��͎]��8f�8逷���1�R�jR\r_D��!���5\0���y:bz1��:_�졳8HX�T[\'��\ZD�� \'���f�i', '[object Object]', '�)��w6�', '�$�K%�ݽQ�xN=MUp�.A�u>\b��', '[object Object]', '', '', '�k���v�b�^b]�5�U�\b���4�d���b��7΄��2�q9�6S�լ�����b�q���tw\Z������g����D�]C�di0�*���,.!m΄VC4�H\"]�2F��X��nl��m2PQ�L�a#�ntƅ�?�0\n�0�|o�����J�E������z��\t���', '[object Object]', ']r�:��#C��v/�qa���Htj*6��A���|�J�\\���F2L���\"�ՙ���X����G����\r�i�Nd��u�_�\0�� �t:1\0����xy�4\"���)zxjC<�GW$�U]\Z#\bL4B\\\n�}֠�j7����KD��{�֙��Bf�������T���¡���ء�|Qx�b���T���\Z$�_������B�/E���N��\"�/������ᬋJa�ޞTu�Nr��[�T�W��>�ڤ�ҳ�nͨ�ڈ�p;�̧ʀr��ж��8��{�1w�\0���J\'�d/P;������b��%=�/', 'Yx�x[��a;\\<j����p�a���R.aI�_��:���Zy�W�1/�`\"�$?M��\n��t�g���>����1r�Z�MUD3n�h�sq��� �,\"�EՌl��kA�L��[#�{��=샖z�Pm ~В�^tir�j�9����9�t7�[ж����%JڰCG�', '[object Object]', '[object Object]', '[object Object]', '[object Object]', '', '[object Object]', '_YM��Rz`ta', '[object Object]', '[object Object]', '[object Object]', '[object Object]')
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`��e4|�׸䴨�\u0016�����\u0001��a�\u0006�\u001d�\u000e�yV�즦�-�\u0004�' at line 1"
+sqlState: "42000"
+index: 0
+sql: "INSERT INTO `movie`(`------WebKitFormBoundaryffG5AGYhwK9ZuUkL\r\nContent-Disposition: form-data; name`, `^�~�����z�����\u0011�׼� ���j�\r�-5��?��r��뷅\u001f�{\u0002<�\u001f�W�\u000f�\u000f����?������W�g�?`, `ћF��-ke�\u0011��<8��F��O�\u0007����{�u���\u0013�#Z�s\u0007\u001f�\u0003�s�`, `����0��~��X��\u0016 \u0011���Ń�4�~�b�\u0005�9��1��3�\u0017�ȟ��\u0019q�bk)\\�L�/\u0011\u0018����!�0�T�mg�Ҕ\t�g\u0001u�\u0013�jF��\u0012M\n�����\u0007�p�\u001b``�TP�Av���M�\u001a�e�'�n���K�Io�\u0011�`, `Q\u001d@\n `, `�;^�?U��c�/:�>`, `\u0014���'?<��vh��\u001c\rXe�`, `��e4|�׸䴨�\u0016�����\u0001��a�\u0006�\u001d�\u000e�yV�즦�-�\u0004��\n�``\\ݠR�D��\u0003Y\u0016Kb\u001b\u001aT�q\u000ei\u000f\b��n!���ۥ$L;���%�1\u001di)P�\u0012�� ����l�i��,�F�\u0015\u001f)9��K�(�@\u000e۳\u0003'\u001fDY(��n``��,T�'�D���\u001c�l�y�tT\u0005�ј�yWo��TYC\u00048�|\u0018\u001f֏k\u001a%E\\��H��?U�\u000e�E�\u0000^\u0011�q\u0015��m��\fn\u0004\u0004�\\~O�U�C�끟f��\u000fE�y\\�� \u0005\u0013{_��:�׉�C��\u0016 �O�q8�\u0017? 4:�~�o�*QysY0if�d\u0003��2��wRk\u0000,3��X4 \u0010��M�>�˞<��xщ�t\u0011���b��u��/W��z���Y�\u001c��0J`, `�s��m`, `\t\u001d��qލ0y\u000b��\u001cԱ@�d� `, `�L��!�����E� �{\r�7�׎C\u00116�����mj���9\u0003;:��HrS\b�0�\\V�%,���Y�C���Q�\u0017�6\u0016�V��ҫ�g��@h�]��\u0006\u0018��vJ0?��m�\u0003\u0003�_͇�\u0012^���ʊ��i\b��\u0004�/\u001e��`, `i��BZ �\u0018tM\u0017�\roK�\u001d��Qi�٘xC�U�,�#�\u000b���8��R#O)��\r����W�� \u0012L;{ͮ���� 1\u0002�xLIc�ה�hFHg�և��\"��6���k��\u0004��@����\u000b��s\r�L�*5�`, `(\u001a���\u001aZ_#�z\u0007EZ_\b��bx\u0004D��O\u001f�R�\u0011�ps��ݕ�IP�HqZl\u0005�(`, `d(6�`, `C\u0014\u001c�\u0017k�8 ���6m�r%|\u000f`, `4�v�؉\u00155�V�����-�֙@�\u0003S��/�\u0006Wc��mL�\u0001��f�\u0012������nݵ�j\u001f�����\u0000��S'a�,b\u000e���ţ�g?�D�oR\u000fѐ�\u001b�5�\u0005��\u001b�u�Iyy�f�PԌ�����`, `m\u0007\u00069\u000b��3\u0010�\r�F\u0019K\t0����(\bn\u0005,�b����W>����8\u000b0����`, `8\f�),-!L�5��s���H�\f�\u0011�U�C�Z�`, `\u0015z�TN�'���W\u0013��M\u0001Wo,�\u0003\u0017k��P�76�K`, `�\u001a�׻($o]9���u�?�``4kĀ5j��/\u0018��HZ��>ʧpP�\u0012\u001e�fO�t\u001d�yG���'\u0013�;\u001f\u0007j\b[c\u001f�ܵ�p\u0001\u0011K@��a�9G�r�\u0012�9d�\trk�d�[��\u001a\"2PerE�ܵ�\u0003Ȫ�G41�޸E�\u0000\u001b �?�6ے��D��%�t\"���Y0�\r\u0007(4I�����w;�\u0004�1Q8�K���:��\u000f�6�1Fm�nW5dH\u001b\u0004��-L�3M��\u0011�<�r �����R�T����oc�A-�u�l\u0019���\u0006`, `�r�M�*���-WR���ܟ\u0011\u0010��oL�l�V���D\u000b�v'���*\t�;��^��n�R\u0006�Ss�o�\t����`, `�r/�!��TR�C9��^�ˈr�\f|/7�4\u0018\t(���j��O�L���ڌ����|]3�`, `4�ޑRB��\u001d����\u0002<�\u0013��\t��q�\u0012:]�`, `�\u000e\u001f8�m�ґ\u0007Y01-�>�%�!``о\u000e�\r{2WA�\\�@��0�wb\u0018�~-A)�S����%\u0005k5�\u0017I2%\u0018���\u0012�\\�Ma�Co�R˲x\u000b��JҞQ�\u0005\u0018dV\u000b����\u0000��8F2\u000e�y��\u0003ͬ j�Uf�r�)���v\u0010��\u0019o-\rMq�>\u0012�\f\u0004\u0001\u0013\u001ao��J쌼6�\u0004��r\f:``\u001e�ypi{ڐFBb:�u��e����\t�~��\u0018%}S<!� {1S��o�I��dS$D\u0017\u000fVlZ}E�\b�7;k)QV�ɖ6�H�\u0000'7��U�9$q�s\u001d\u0012��\u0012~��8��-���)��vj#~�c�\u0013\n�cڇ�ౖ-��,\tBY?�%m��E��\u001eÊ9�1����s9�\u000b\u0010���X�8<\f[?��`, `�U�\u0016\u000e�1�M\u0002�sz�����Z,��v����\u001f1%�!�H�(�ғV\u001f�G!�g\u0016��}�o��\u0015���\u0000\u000e���\u000bk\u0018Y��\u0015\u0007~�H�S�ܞk\u0011ў�P�\b�k�rrs�uFqw��mhd/s\u001d��o��������\u0011\u0013�\t\u0015��BMC˭��'A\u001cن6Q>b\u000e���q\u0007�u@�_JV�\u00057�H�\u0004�<jE��d��?\rSr%��K:��x?���i�\"({��\u000e�Lg���T� B��{��\u0003e�1\f�i��```, `\u0002,;��\u001b|�i ���~!M<3$�\"8G�~���\u000f{���|���CuH����d*-�\u001f���:aêgh\u000bR��R�9�qI\n3�0r\u0018`, `B?\u0019�\u001f2\u0018T#w�w�j̥�\u0013��뿒�C�A��'%b�g\u0006C)��R�T�9\\]�?G��\r3�\u000b�\u0013M�]�`, `\u0004�z��2��a��ԃM\u0000�߲�z�\u0012��(��`, `ގ�x0�\u001cx�>Y\u001ci�\u0016�f�C�Vy5TN�\r�J���D՗I�}�``v1�Ӫ��|M�ȭt�����<Ğ�o�N\u0019$\b1>{�-�x�Vҡ�iX��i���\u0010��\u0014��'�� \u0005�;\u0000c8;\u0011W�\u001f���\u0014�5v\u001f�\u0010/��h�\u0000�u�B\u001b�\u001dc'��H���\u0007�9\u000eM�t/�\u000f\u001c\u000b�p\t��I\u001e���^��\u0014T-,�pb��r�����\u0010c;�^?\u0001\u0018N�3\u0004�9����1�b�/�e\u0003 ��N�����\u0004W^��\bOԶ��%ay�oٞ�1�k�\u0003'�A~�;����\u0018\t\u0004�;\u001fY�B��(�G�F��j�ߘ�,�U��6�\u000b<s`, `\u001f\u0018s�Dk'���u\u001be�HKS*����4o�\\M�\f�\u001c�l\u000e(\u001f|\u001cå �\u001a�\rv���T�\u0018��\u000b\u0002|�}��\u001c\u000fw�s`, `���6�� �n\u00170 rUb�|�c�C���\u0014\n]WL�\t�`, `EX0���3\u0000\u0018\u000b�KT;����\u0018p`, `\u0019̓\u0002�[�`, `�d�\u001d���T���\u0019�T\u001fR|�\u0016�<\rD`, `�߼\u001fH�����X�\t �\u0013!�f�֫�\t�{X$���R� �D�p���\n��r@�q�m�x]��߂��{�DV����WX����QI�\u0019\\\t#�~``ϗ��\u000f\u001b�6��\u001b��\u0018�b��0\u001d-b������Χ�p\u0003�O#8�\u0013�{<�\u0013C�@�S�ӱ���9\u001a�j�)#�)\u000b~��͘�n\u000e�]@xH\t�H��m``�\u0012\u0016�\u0013\u0004�F�>��^P�\u0019\u001c8��d��\f��z���oM~܄z��Lg��\u001c�a��\u001c����I�/߹p\u001b��Ojx`, `�x���h\u001d\u0002ȉ�\u0001�a�z:\u0010U/��\u000f\f�[��eq\u001f�\u0011�H*�� \u0002��E?����ɜ�w� ��m*�A*��<q'�_o����\u0005d\u001c\u0000\u000f(i��ޡ�`, `\u000f�i�\u0006\u001a�\u0019�\u0004*�9�1�\u0005��k\u0007v\b�\u0012Y�ii;ŖB\u0019vV��Oͥ�*\b�e\u001a�\u000f4ߊ�\u0018�_5�F�'l��}�V#�\u001fҍ��S�*�\u0017`, `R��\u0003�۱��\u0014�\u0000�#S\"�6���?��f���\u0007���易��W���8��\u001a;�:˂b_ԙO���m\u000f��gJ \u000e�?��z2�S���je%����\u0003[��U�\u001d-�G �\f�r�o�慽mʯ\u0000\u001e��6��4�(�\b�9)5��N�fq�$�\u0010L���\u0010�'_0֯h\u0001��\u0000-p��T�h�x�4����\u0003a�\u0003�R\t�������M�[�܂kC��`, `�\u000bU��\u0005)��y�iN�9�u|\u0000��c�\u0014�*��t\u0004e1�|���\u0006z��`, `\b2��\u001d����h�uj�\f\u0013��F��B���H\u0013̜�\u0002���u\\g�q�\u0013�\u00012�w��Ri��8�[[\u0004-��9^f4F��-Mow�\b��R\u001do���D\u0011�X����gLu�\u0019�\u001a���b�\u001cY\u001a{:Bm����, �3*I�\u001c7ߠ\u000eP�\u0013�0�ܔw|10�6�!{c�\u001e��\b�[��k`, `���\u00178��\u0013ӫ�e�R�m\u0000qϟ�|~�@\u0011\b��9��Q�Ds\u0003�$�7�9\u00110����4\u0015�^S�\u000f����n��\u0016�X^J{1����8�U���\u0001\u0004\u0005E��R���N\u0005\u0001s�]����R��`, `�g��\u0002�]\u00027����R�X���}�\u0006���y}岡j��ct\u0004����b\u001c7�R�U ��]!��0_K���\u0004A\u0017M������g�e�\u0003\u0005�\u001aq\nLjD�rr�~rT\u0006���\r J�\r� �\u001az�Fk��>��d�v��{�`, `��\u0002)%����7�\\ܒ�\u0015\u001db\u001ajh,z���V\\HQƌ����t2*P��O\u001ḏ�u4YL���s��\u0018f�\u0016\"2�Βc��2\u0012����j˼|���Zj7�ؖ�,��J1�9\\�Ʒ��� v��\u0014��n᜚�a��Ѧ\b\f�_$\u0015�D�u_��\u000f\u001ee��4���i��>-�kw�e�S2�l�XWҼ�`, `v`, `�!�\u001c�~��``Jy�\u0001��wH;�H�]�,�\u001d�\u000b������Z��\u0002�b�\u0015\u0007�sʥ��Y`, `����\u001dF��``�\u00160�P�o8`, `��\u0004�گ��%!5Q�H\u001d\u0010\u0004����\u0012 ���������x����}g�����2-S�\u0005\u0010�6��C�_Na``�`, `�R���*����NT��ʍV� vA�)�d\u001a��\u0018��o�z\u0004|��4�d��\fxb�A\u0005�]��S�F\u000f������T����e�G��\u0000�P��\u0016C�\\��h/\u0006���1A\f\"ѱ\u0003��bJs/�\u0019�](��gyj�5�\u0002�Y5Иy��v�u���\u0018\u0013q�\u001c�����$�o\u000b�$\u0016\nM�\u0013i�`, `M�6\u001b4\u0013\\';2������\u000f`, `N�fަm��86���\u0014! �\f�*~�;�K��,l���C\u0019��W��\u0003��Nq\u0000z\u0011���\"]\u0012os��}��gGZ\u0014{\u0018\u0000���\u0019���A1?1``l��텅|�}�u�U\u0006��8�c![��\u001f'��Kjp��\u001e��K|}�����U`, `wM�}%�`, `֝`, `L{U�$A�\u001b� 7�c�\rWVǑ0\u0010``�}\u001d����s{�`, `~`, `�{B\u0004\u0004��n�o#�\fd30s:?Ğ���``\u001a��N�\t\n��{5C��x��ܣ�^6�\u0007^�Xs748�A�\u0011\u000b-]��\u001d*u'!Qy�\u000f��a:�FEr�>y�]\u0006:�\u000bR\u0003�\"�j�h�\u0001F�l0^\u001f\u0016�\u001f�[t!�Gk����%X`, `E_�ӰL�S�``Dd�~�;��'��`, `�\u000f\u001fD�?�˅�<�?\u0019����(?\u0017�\u0003�\f��1\u0010\u0001or�\u0013�[D1߾U% ��_4\nw`, `>(\rKR\u001b�B��T���\u0003��\u0010\rYս����a�b{¹W�\u0013j�`) VALUES('\\\"file\\\"; filename=\\\"p443461818.webp\\\"\\r\\nContent-Type: image/webp\\r\\n\\r\\nRIFF�;\\0\\0WEBPVP8 �;\\0\\0��\\0�\u0001*\u000e\u0001�\u0001>�>�I%�\\\"$*Uː�\u0012\\tcnt\\\\��uҪ��w\u0014���f�T�7����o�����g�����s����>|�|������?�?�', '[object Object]', '\u0017��{^�ў�@BI��\\Zy~Gj���j\\b]~Ug\u0003m���\u0014Ѽ\u0010A폭�^��=�\u0016���|�r:%��PM��,%�\u0011a��{f\u0014�\\\"|�\u001b�\\n�\f����X�]��ŉ��*�\u000bt\u0013�\u000b!C��Y��}\f���\u0018���$Ϟ�\u000f\\b��%�\u0016?\u0004V��2��K�k@7�L\u0006��k��\u000f����� �G�TϹ���\\\\��\u000bg\u001da�=�M�f�%�z�T\u0011\u001c��PC\u0014\u0018�^�tS��\u000f\\\"y�b(�c\u0004tg\u001bv�\u0010�i�L���42N�0xn�9��9\\'*y�0ME�4š\u001f���\u001c �o�?5Y\\t�Wf��ґ7�B�\u0013�B�\u000f��E�,��V�o?�55\u0016\u0003\u000eX�1�\\rf\u0004����\u0019)�[\\r6�Jda��4���X���#E�-� ��\u001f ��P\\ZA�@��\u0010UɊ6|���Z)�D���*É�� �:��ڍ�\u0007�\\0�\\'T�E��I\u0016KL\\0��I��3\u001f A�!�%���H�:�N\u0019���Q���9\u00177���29��� ꘡', '', '\\t�\u0003F�����A|\u0015�af/��\u0004\\ZcH1k0\u0011u', '�3���f�����\u0005ʱSl�s��\\0��<�<\u0017��\u0015��\\r\u0019!\u000f��[�����F,\u001e��\u0003\\0I\u0018��\\Z?~\\r�S1�!\u0004\\n\u0007��a���M��\u0003q����ym�\\0\u0019B�/\\0�����p�m=�\u0005e),���|H\\'�7�XJo�W�t�br�F,WܪB]>1�', '[object Object]', '}����\\b�mP\u0007\\0<S���㴂e\u0003O�����\u001f�\u0004��#�\u001b����g���*K�\u001bwګב�-�\u0018L��j�2e�U\u0006��\u0016\u0011�٣���EpE�C�`s��p�u�5G��)��\u0011�\u0014\u0001H�L7��uw>*��#���@��\\ts\u001d���V\\ti���Z�2�\u0001�~�r�l�<�DF\u001e%���(��4Xݵ.�˖�M\u0004\u00077�|����X��\\\\\u0010��̃@`;��7�\u001evy�޿g�掰���\u001b�\u000e�x��(a\\\"��~�^��l�3��έ��Z\u001f.����1�M~�����\u0010!���/�\\0\\0��\\'�\\0\u0003��(�xQVے�_X�����i���焫1�M�\u0012\u001d<�:t`�r���p,76�#��/u������z�m\\'g�h�20I�OA[\u0016����}�Wʪ�e�\\\"\u000e[\\'\u001e8�\u001f\\n�,���-��\u000b�<9�%9�\\\"�nc�\\t\u001c��W�ٛp|W?�)\f�}����/\u0017\u0014�oo�~��2��ɘ��Kmg�g\u0001��-\u001fhi7�\u00114\u0011�DĲ�\u0018z�r.\\n�w��jѮ\u000b\u000fH�Y���m�Tt\u001e���?��\\rR���i��B�\u000e�\\t�S !������\u0015�\u0012@ﻕ�zɟ ���4\u0016\\'��ؚ���@�x\u0003Ex�e��\u0006���Zf\u0003�_�����R�*Jc���}e���d�5��ߢ�\u0006n�S{��\u001b~�6)0d\u0011Ų�D\u001d\u000bO�<�؟\\0#\u0007=ŀ', '[object Object]', '', '�8m�(�v\u001e\u000e�����\u001e�\u0005*\u001bL��\f��~\u000b\u001e��\\Z�Ah�y|#.\u0007\u00190��[7�ۗzQ(S�hJ��u\u000e\u0018\u0018�2DJP�h�0\u0013\u001cIkwx�_,N�X\u0010�Ly���7�=��^�ԳM���3P{n������\\0�n�o�8EQp��ɹs7\u001dbۅ�{�,Y�u�<��@�2\u000b\u000fB�$_��_��τ��RMӿ`�߷��\\Z>�Y�������\u0011�䖎��PIYΖ�P���O\u001f�|��O�B�\\0\u0003nk�x�\u000f҆y�bY��*���Z\u0012���G�uO����ES#��3�� �\u0012ʒ6�\u0001\u0010�{X��ҩ m��dp@\\0\u0014�H\\0\\0~��;��\u000fا��ņ� �5Ĩn\u001b-s��􈸲D/\u00186\u0013��\\'\u001f\\Z����a���\u0016��,!��ᐗe�\\Z6TI;\u0017\\'���[\u0006��\u0015)���t⒐�\u0015�ܢ��k\\\\�=\u0018  �\u001cd��\\0\u0002s�a�7Z�<���\\n:���ړXt\\0�$P��^;��\u001df�\u00103* .^���}��╨��Cg�\u0004I�ѐ\u001c�\\r���9\\'�A\u0012_ ��E\u001d�_�l�#Q\u0018Յj��N��_�e���\\nT\u0015d}�!i�\u0006��v�9\u001e��\u0003P�\u0005�2*!b\u0017���,pϐ\u0006�w���y\u00034�m�ݸ_��ȖE�\u0001���(\\Z��br', '��,�\\t@q�;�)��oJ8�\u000ey', 'Ҵ\u0017Gu\u0012\u0016]L\u0011�,G�\\\"�8\u0010!n|\\Z\u001c��u�\u0006.X���\u0011�/������\u0001��N��_�l�\u000e\\Z^S���ձ\u0001��UR\u001c?�\\0\\n��Q�����\\n}\\t��ڻ����˖\u0002��\\0C��\u0013\u001e�����\u0018��4�.9A}�J*渊��j.0\u0001�S�\\bAk���?:a��Y��v��,|�as�h�\u0018�.�6�\u0002\u000f��q�#1�_\u001cZ؏1of���,�I�u���ɐ�tՙ\u001ex]Ms��N�����EM$)���)cwh\u000fmW��P2�eN���� ��#%�\u0016e\u0006^��_\u0004`��\f\\\"�\u0014�V\u0004jb-B�\\'�)z�rG�O��і\\t(ƀ�}�Qs ޫ\u0012�� ʞ��Z.ߖ~\u0019���5���\u0012��a�Ϧ�I>TT��\u0007��ԁ\u001eԈ\u0012�-|#\\n/��\\t\u0005�3� -��\u001b\u0014���\u000e�L�\u0010i���=�\u0001���n\u000fFs�\u0014�\u0006\u0018�\u0017\\'�쟠GV\u0016�Vڽ�\u001cν�U��i\u00165y�F-D3\u0007\\r���ח����gF�\\b���YTi}���\u000bC`�/���\u001e1\u001e���T蘡In���C��͗ �z���\f�D\u000f1g��C�7��a�y(\u0015��UlSOF�<�9��j�3`��$\\b��N�d�죳\u0019�����\\\"��L�H51�l�T�|GAT��\u000f�i{���w\u0001�w4�l���g\u001b<1�vJ\u00193V\u0001Cl�\u0005^U_��\u000f��\u001e?���?�W\u001e��DT�Q�\\\\��A�0�7�CT��!�v�ӭ�U��Ih���1Lz��IG��G��?�\u0010���\\\"�Q#�n�\u0012���q��\u001f�\u001d\\'_�1h@��BM�B��ʾv�\u0006ɧ�������UL@�{��z\u0018:Iϴ%\u0002wz�r��z�\u0012�h���ڹ)�����<1B�����\u0004��\u0011�ڽ|\u0017[������ƽ8Q�\u0005>0��p����U��J\u0015�{�ϋ�n��d�2� \u0014�\u0016 <%��r��?`\u0003\u0004\u000b\u0002���\u0013���|�4Q\\'\u0012�E���\u0006���I7�f\f6��oG����T*qs�\u000fJ��)%��\u001dv5/�a�s{T%��', 'w H\\0\u0005[h�Q��^\\Z��b\\bs˛K� V����*��\u0016�s!�o�7��۷ ���\u0002��g��ґO���,7�\u0015$�D\u0010�\u0002�\\r~�b烱�-F\u0019�Jr$*�F��D\u0010�ڛ�gޗ\\'�c�\u0013t8\u0015�1�D;����D\u0014o�5�m�34P�F*�\\0\u0018M픂\u0015m\u0004���/�\u0002\f��$0a�\u001eH������d\u0017�� x4\u001e%�2�����ƿwh~3���\u0007�����\\\"A��2�\u0005a\u0010�L\\0���%����\\\\�h\fJ', (''), '', '��޼�Z��Xč�', 'IϷ��厝�\u001d|��(�8޴[kj\u000b�\u000f�\u0010�\\'�\u0014\u0005�2��:ٟ߭���v{��l�~�\u0015$�71��^�沊\u0011�@�ū�\u0005����TSϢ\f\u0016��7���|�܈�E^��\\b��\u0018o\u000eEhE\u000b\u0018�r�by풎����t� x��%���\u0004�H�\u0010\u0015�p%j��P\\r�\u0019I\u00111�U�?���\\r�f�c�(��y�\u001bYu�\u0001�?�z7��\\Z��_Wo��7��\u0013\u0016Xפ��B��ZT?���}Q�Y��H,�]o�@R�¥\\rЛ�Z�t\\\\�\u0019qݡ�\u0007$\u0004�\\\\e3��9T�a֐ƌ�3�����Y�\\\\~Y��\\0�\u0001�-o8����h��i\\b��۱\u0007�te���s��i��\u0005��Cx`?Y�@{^��\u0014�/0b�\u0005]��\u0005\u001d��\u000f\u0013/M�', '', '', '', '', '[object Object]', '', '\u0017\u0011J\u0007g\u001fLh p.�P���x@\u0010�\\t=k�t��(BZ�[��7.����΅�����Q��\u0011W\u000f�-c%�qrH˾��I� �z�V\u0005D��y', '', '\u001d\u001d\u001b������/��Ho#���Lk`�Q2���\u0012>U5Y�\u0007�\u00110l��\u0019�QV���-\\r�F闃m޴u�rᱛ�S���6�\u0005�np�pʄv����X\u0005�?�ٰa$mf4s\u0007�\u000b�H8\u0012���ɴ�\\'�\\'[�A©`,�� \u0012]�h�5�z����\u0017\u0018\u00020\\\\1c\\Z_��<\u0005��\\b���M4��h�\u0019���\u0017rn1�\u0011��\\'\u000e�����P2�', '', '', '[object Object]', '', '', '', '', '[object Object]', '', 'w\u0014�3���jXi\\\"��P��\\Z��$���������A\\bI���H�\u0007��\u0006��OӛW\u001b��9ޏd��K�t[ToWtwC@\\b\u0011BJ��e�\u0013�(��r$���aS\u0018\\b:�sA�\u0013�V}Ѱ�-\u0001]�?���v�@g*\u0005\u000eۖ\\\"��AXU�4\\'->i� r6\u0010oT�BlK�\\\\�\\'��g��\u0003*N�d\\'%��{\u0016l\u0018H�s��\u0019�r\u001dpZ,\u0015撌��.^s\u0007_�X��g���\u000b3/9���w\\'���:\u001d��/��f\u0013��S\u0005�/�\\r\u0015,A���\u001d\\t�\u0010h�\u0006\\n�A����\u0002��3�\\\"�,\u0017��\u0010��|Y��\u0014��AL1��vS6����٠~\u0011l|�֎�F�Xf�\f�\u0006�zn[�%�s�\fN�\u001b��-%�����P[�E�0ۡ�\u0015�y\u001dɽ��}���]$g�{Z���\u0007\u0017y.�\u0010�`u\\0\\'c�Ut�O\u0001�Ǯ�=C��\u0017k��b҄N��ñV�\u0004F�}V��D�(\u0017��x�!u��@�g$r\u0011��p�\\0C����J���\u000f\u0018�ﷶ\u000fw�z\u0002~C39Q/�C�X��\\0\\'�Eh�u6��͎]�\u0015�8f�8逷�\u000f��1�R�jR\\r_\u0016\u0014D��!���5\\0���y:bz\u00061��:\u001c_�졳8HX�T[\\'��\\ZD��\u0019 \\'���f\u001d�i\u001c', '[object Object]', '�)��w6�', '�$�K%�ݽQ�xN=MUp�.A�u>\\b��', '[object Object]', '', '', '�k���v�b�^b]�5�\u001eU�\\b���\u0015\u00044�d���b��7΄��2�q9�\u001f6S�լ��\u001f���b�q���tw\\Z������g��\u000e\u000f�\u0003�D�]C�\u0018di0�*���,.!m΄VC4�H\\\"]�\u000e2F��X��nl��m\u00022PQ\u001c�L�a#�ntƅ�\u0001?�0\\n\u001d�0\u0004�|o��\u001f��\u000b\u0002�J�E������z��\\t���', '[object Object]', ']r�:\u0013��#C��v/�qa���H\u0015tj*6��A���|�\u0018J�\\\\���F\u00182L���\\\"\u0018�ՙ\u0015���X�\u0011�\u0010�\u0014�\u001dG����\\r�i�Nd\u0019��u�_�\\0�\u0013� �t:1\\0���\u0011�xy�4\\\"��\u0004\u0017�)\u000ezxjC\u0002<�GW$�U]\\Z#\\bL4B\\\\\\n\u001c�}֠�j7��\u001b��KD��{�֙��B\u000ff���\u0010�\u0013���T���¡���\u0018ء�|Qx\u0011�b�\u001b��T���\\Z$�\u0004_���\u001c���B�/E\u0015���N��\\\"�/������ᬋJa�\u0001\u0011ޞTu�Nr��[�T�W��>\u0001�ڤ�ҳ�nͨ�ڈ�p;�\u0015̧ʀr��ж��8��{�1w�\\0\u000f�\u0012��J\\'�d/P;������b��%=�/', '\u001bYx�\u001bx[�\u0010�a;\\\\<j����p�a���R.aI�_��:���Zy�W�1/�`\u0004\\\"\u0012�$?\u0016M��\\n��t�g���>��\u001f��\u00171r\u0005�\f\u0019Z�MUD3n�h�sq���\u001c �,\\\"�EՌl��kA�L��[\u0005#�{��=샖z�Pm ~В�^\u000etir�j\u0016�9���\u0018�9\u001c�\u001bt7�[ж����%J\u001dڰ\fCG�', '[object Object]', '[object Object]', '[object Object]', '[object Object]', '', '[object Object]', '_YM��Rz`...(10080)"
+name: "ER_PARSE_ERRORError"
+pid: 30036
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:19:06,042 ERROR 31629 [-/127.0.0.1/-/7ms POST /api/insertMovie] nodejs.TypeError: ctx.request.getFileStream is not a function
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:9:36)
+    at MovieController.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:14:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 31629
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:24:06,793 ERROR 32314 [-/127.0.0.1/-/7ms POST /api/insertMovie] nodejs.TypeError: ctx.request.getFileStream is not a function
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:7:36)
+    at MovieController.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:14:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 32314
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:25:08,720 ERROR 32446 [-/127.0.0.1/-/2ms POST /api/insertMovie] nodejs.TypeError: ctx.request.getFileStream is not a function
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:7:36)
+    at MovieController.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:14:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 32446
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:29:58,100 ERROR 504 [-/127.0.0.1/-/11ms POST /api/insertMovie] nodejs.TypeError: Cannot read property '0' of undefined
+    at MovieController.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:15:35)
+
+pid: 504
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:30:43,341 ERROR 613 [-/127.0.0.1/-/5ms POST /api/insertMovie] nodejs.TypeError: Cannot read property '0' of undefined
+    at MovieController.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:15:35)
+
+pid: 613
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:44:31,619 ERROR 2170 [-/127.0.0.1/-/11ms POST /api/insertMovie] nodejs.TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at RDSClient.proto.insert (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/operator.js:124:30)
+    at proto.insert.next (<anonymous>)
+    at onFulfilled (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:65:19)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:50:10)
+    at RDSClient.createPromise [as insert] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:30:15)
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:12:40)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 2170
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:45:50,310 ERROR 2296 [-/127.0.0.1/-/27ms POST /api/insertMovie] nodejs.ER_WARN_DATA_OUT_OF_RANGEError: ER_WARN_DATA_OUT_OF_RANGE: Out of range value for column 'year' at row 1
+    at Query.Sequence._packetToError (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    --------------------
+    at Pool.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:199:23)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:12:10)
+    at Pool.ret [as query] (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:56:34)
+    at RDSClient.proto._query (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:65:19)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:54:5
+    sql: INSERT INTO `movie`(`title`, `director`, `rate`, `year`, `quote`, `img`, `id`) VALUES('1', '1', '12', '1111', '12', '/public/images/p452582315.webp', 'undefined')
+code: "ER_WARN_DATA_OUT_OF_RANGE"
+errno: 1264
+sqlMessage: "Out of range value for column 'year' at row 1"
+sqlState: "22003"
+index: 0
+sql: "INSERT INTO `movie`(`title`, `director`, `rate`, `year`, `quote`, `img`, `id`) VALUES('1', '1', '12', '1111', '12', '/public/images/p452582315.webp', 'undefined')"
+name: "ER_WARN_DATA_OUT_OF_RANGEError"
+pid: 2296
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:46:18,557 ERROR 2296 [-/127.0.0.1/-/8ms POST /api/insertMovie] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'undefined' for column 'id' at row 1
+    at Query.Sequence._packetToError (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    --------------------
+    at Pool.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_mysql@2.16.0@mysql/lib/Pool.js:199:23)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:12:10)
+    at Pool.ret [as query] (/home/sue/NodeProject/EggDemo/demo/node_modules/_pify@2.3.0@pify/index.js:56:34)
+    at RDSClient.proto._query (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:65:19)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:54:5
+    sql: INSERT INTO `movie`(`title`, `director`, `rate`, `year`, `quote`, `img`, `id`) VALUES('1', '1', '20', '1999', '                                ', '/public/images/p456666151.webp', 'undefined')
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: 'undefined' for column 'id' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `movie`(`title`, `director`, `rate`, `year`, `quote`, `img`, `id`) VALUES('1', '1', '20', '1999', '                                ', '/public/images/p456666151.webp', 'undefined')"
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 2296
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:54:35,140 ERROR 3184 [-/127.0.0.1/-/9ms POST /api/insertMovie] nodejs.ReferenceError: fs is not defined
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 3184
+hostname: sue-OptiPlex-5060
+
+2019-03-07 14:58:56,947 ERROR 4221 [-/127.0.0.1/-/11ms POST /api/insertMovie] nodejs.ENOENTError: ENOENT: no such file or directory, open '/public/images/p453719066.webp'
+ENOENTError: ENOENT: no such file or directory, open '/public/images/p453719066.webp'
+errno: -2
+code: "ENOENT"
+syscall: "open"
+path: "/public/images/p453719066.webp"
+name: "ENOENTError"
+pid: 4221
+hostname: sue-OptiPlex-5060
+
+2019-03-07 15:07:03,474 ERROR 5626 [-/127.0.0.1/-/1ms POST /api/getAllMovie] nodejs.TypeError: ctx.service.movie.getAllMoive is not a function
+    at MovieController.getAllMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:26:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 5626
+hostname: sue-OptiPlex-5060
+
+2019-03-07 15:07:26,138 ERROR 5626 [-/127.0.0.1/-/1ms POST /api/getAllMovie] nodejs.TypeError: ctx.service.movie.getAllMoive is not a function
+    at MovieController.getAllMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:26:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 5626
+hostname: sue-OptiPlex-5060
+
+2019-03-07 15:07:39,881 ERROR 5730 [-/127.0.0.1/-/14ms POST /api/getAllMovie] nodejs.ReferenceError: resData is not defined
+    at MovieService.getAllMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:30:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 5730
+hostname: sue-OptiPlex-5060
+
+2019-03-07 15:11:31,447 ERROR 6215 [-/127.0.0.1/-/15ms POST /api/getAllMovie] nodejs.TypeError: Cannot read property 'resData' of undefined
+    at MovieService.getAllMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:31:25)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 6215
+hostname: sue-OptiPlex-5060
+
+2019-03-07 15:12:38,438 ERROR 6327 [-/127.0.0.1/-/14ms POST /api/getAllMovie] nodejs.ReferenceError: resData is not defined
+    at MovieService.getAllMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:31:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 6327
+hostname: sue-OptiPlex-5060
+
+2019-03-07 15:12:41,322 ERROR 6327 [-/127.0.0.1/-/12ms POST /api/getAllMovie] nodejs.ReferenceError: resData is not defined
+    at MovieService.getAllMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:31:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 6327
+hostname: sue-OptiPlex-5060
+
+2019-03-07 16:05:57,001 ERROR 13345 [-/127.0.0.1/-/9ms POST /api/insertMovie] nodejs.ENOENTError: ENOENT: no such file or directory, open '/home/sue/NodeProject/EggDemo/demoapp/public/Thu Mar 07 2019 16:05:56 GMT+0800 (China Standard Time).webp'
+ENOENTError: ENOENT: no such file or directory, open '/home/sue/NodeProject/EggDemo/demoapp/public/Thu Mar 07 2019 16:05:56 GMT+0800 (China Standard Time).webp'
+errno: -2
+code: "ENOENT"
+syscall: "open"
+path: "/home/sue/NodeProject/EggDemo/demoapp/public/Thu Mar 07 2019 16:05:56 GMT+0800 (China Standard Time).webp"
+name: "ENOENTError"
+pid: 13345
+hostname: sue-OptiPlex-5060
+
+2019-03-07 16:20:33,984 WARN 14258 [-/127.0.0.1/-/26ms POST /api/insertMovie] nodejs.BadRequestError: Can't found upload file
+    at Object.throw (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa@2.7.0@koa/lib/context.js:97:11)
+    at Object.getFileStream (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-multipart@2.4.0@egg-multipart/app/extend/context.js:97:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Can't found upload file"
+pid: 14258
+hostname: sue-OptiPlex-5060
+
+2019-03-07 16:28:34,319 ERROR 15075 [-/127.0.0.1/-/11ms POST /api/insertMovie] nodejs.ReferenceError: stream is not defined
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:13:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15075
+hostname: sue-OptiPlex-5060
+
+2019-03-07 16:58:31,293 ERROR 17398 [-/127.0.0.1/-/38ms POST /api/insertMovie] nodejs.ReferenceError: movie is not defined
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:19:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 17398
+hostname: sue-OptiPlex-5060
+
+2019-03-07 17:27:00,178 ERROR 20712 [-/127.0.0.1/-/28ms POST /api/insertMovie] nodejs.TypeError: Cannot read property 'split' of undefined
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:26:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20712
+hostname: sue-OptiPlex-5060
+
+2019-03-07 17:28:44,565 ERROR 21023 [-/127.0.0.1/-/26ms POST /api/insertMovie] nodejs.TypeError: Cannot read property 'split' of undefined
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:25:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21023
+hostname: sue-OptiPlex-5060
+
+2019-03-07 17:28:45,352 ERROR 21023 [-/127.0.0.1/-/7ms POST /api/insertMovie] nodejs.TypeError: Cannot read property 'split' of undefined
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:25:39)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21023
+hostname: sue-OptiPlex-5060
+
+2019-03-07 17:29:46,983 ERROR 21217 [-/127.0.0.1/-/30ms POST /api/insertMovie] nodejs.TypeError: stream.on is not a function
+    at destroyer (/home/sue/NodeProject/EggDemo/demo/node_modules/_pump@3.0.0@pump/index.js:26:10)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_pump@3.0.0@pump/index.js:70:12
+    at Array.map (<anonymous>)
+    at pump (/home/sue/NodeProject/EggDemo/demo/node_modules/_pump@3.0.0@pump/index.js:67:26)
+    at Promise (/home/sue/NodeProject/EggDemo/demo/node_modules/_mz-modules@2.1.0@mz-modules/lib/wrap.js:20:11)
+    at new Promise (<anonymous>)
+    at wrapped (/home/sue/NodeProject/EggDemo/demo/node_modules/_mz-modules@2.1.0@mz-modules/lib/wrap.js:12:12)
+    at MovieService.insertMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:34:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 21217
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:50:23,111 ERROR 7708 [-/127.0.0.1/-/6ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:87:43)
+    at MovieController.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:82:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 7708
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:52:17,870 ERROR 8238 [-/127.0.0.1/-/11ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:88:43)
+    at MovieController.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:82:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 8238
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:53:08,640 ERROR 8301 [-/127.0.0.1/-/11ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:88:43)
+    at MovieController.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/controller/movie.js:82:44)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/demo/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/demo/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 8301
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:54:28,373 ERROR 8387 [-/127.0.0.1/-/8ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:89:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8387
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:57:26,728 ERROR 8665 [-/127.0.0.1/-/10ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8665
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:58:17,760 ERROR 8776 [-/127.0.0.1/-/23ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:91:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8776
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:59:00,507 ERROR 8776 [-/127.0.0.1/-/4ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:91:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8776
+hostname: sue-OptiPlex-5060
+
+2019-03-08 09:59:39,081 ERROR 8860 [-/127.0.0.1/-/17ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'body' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:91:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8860
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:00:26,479 ERROR 8897 [-/127.0.0.1/-/2ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8897
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:00:53,260 ERROR 8897 [-/127.0.0.1/-/4ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8897
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:01:17,594 ERROR 9068 [-/127.0.0.1/-/23ms POST /api/updateMovie] nodejs.TypeError: Assignment to constant variable.
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:92:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9068
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:02:04,272 ERROR 9137 [-/127.0.0.1/-/12ms POST /api/updateMovie] nodejs.TypeError: Cannot use 'in' operator to search for 'id' in [object Object]
+    at RDSClient.proto.update (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/operator.js:150:16)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:65:19)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:30:15)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:110:40)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9137
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:02:32,251 ERROR 9189 [-/127.0.0.1/-/9ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9189
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:03:37,008 ERROR 9321 [-/127.0.0.1/-/23ms POST /api/updateMovie] nodejs.TypeError: Cannot use 'in' operator to search for 'id' in [object Object]
+    at RDSClient.proto.update (/home/sue/NodeProject/EggDemo/demo/node_modules/_ali-rds@3.3.0@ali-rds/lib/operator.js:150:16)
+    at proto.update.next (<anonymous>)
+    at onFulfilled (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:65:19)
+    at /home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:54:5
+    at new Promise (<anonymous>)
+    at RDSClient.co (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:50:10)
+    at RDSClient.createPromise [as update] (/home/sue/NodeProject/EggDemo/demo/node_modules/_co@4.6.0@co/index.js:30:15)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:110:40)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9321
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:04:24,592 ERROR 9384 [-/127.0.0.1/-/6ms POST /api/updateMovie] nodejs.TypeError: Assignment to constant variable.
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:92:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9384
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:04:59,373 ERROR 9435 [-/127.0.0.1/-/26ms POST /api/updateMovie] nodejs.TypeError: Assignment to constant variable.
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:92:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9435
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:05:22,458 ERROR 9479 [-/127.0.0.1/-/25ms POST /api/updateMovie] nodejs.TypeError: Assignment to constant variable.
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:92:20)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9479
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:06:00,774 ERROR 9507 [-/127.0.0.1/-/25ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'split' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:94:45)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 9507
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:38:02,301 ERROR 13161 [-/127.0.0.1/-/9ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13161
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:41:34,747 ERROR 13161 [-/127.0.0.1/-/1ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13161
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:43:59,872 ERROR 13483 [-/127.0.0.1/-/1ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13483
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:45:13,060 ERROR 13543 [-/127.0.0.1/-/6ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13543
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:45:54,343 ERROR 13543 [-/127.0.0.1/-/1ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13543
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:51:17,447 ERROR 14480 [-/127.0.0.1/-/7ms POST /api/updateMovie] nodejs.TypeError: Cannot read property 'length' of undefined
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:94:87)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14480
+hostname: sue-OptiPlex-5060
+
+2019-03-08 10:56:38,246 ERROR 14721 [-/127.0.0.1/-/1ms POST /api/updateMovie] nodejs.SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at MovieService.updateMovie (/home/sue/NodeProject/EggDemo/demo/app/service/movie.js:85:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14721
+hostname: sue-OptiPlex-5060
+

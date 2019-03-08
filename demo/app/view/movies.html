@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电影</title>
+    <link rel="stylesheet" href="./public/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="./public/js/jquery-3.3.1.min.js"></script>
+    <script src="./public/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+        √ 1.数据视图 
+        √ 2.注销
+        √ 3.搜索 
+        √ 4.删除
+         5.添加 
+        √ 6.单条数据视图
+         7.编辑 
+        √ 8.分页
+         9.文件上传 
+    -->
+    <div class="box">
+        <div class="nav text-right">
+            欢迎 <span class="nav-user">water</span> <button class="btn btn-logout" onclick="logout()">注销</button>
+        </div>
+        <h1 class="text-center">电影清单</h1>
+        <div class="toolbar">
+            <button class="btn btn-info btn-add">添加记录</button>
+            <input class="movie-search-input form-control" type="text">
+            <button class="btn btn-info btn-search">
+                <i class="glyphicon glyphicon-search"></i>搜索
+            </button>
+        </div>
+        <div class="movies">
+            <ul class="grid_view" id="movieList">
+              
+            </ul>
+        </div>
+        <ul class="pagination" id="pagination">
+        </ul>
+    </div>
+    <div class="modal fade" id="movieModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    电影
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" id="movieForm" action="" method="post">
+                        <div class="form-group">
+                            <label for="" class="col-md-2 control-label">名称</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="title" title="电影名称" placeholder="请输入电影名称"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-2 control-label">导演</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="director" title="导演" placeholder="请输入导演"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">上映年份</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="year" title="评分" placeholder="请输入年份"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">评分</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="rate" title="评分" placeholder="请输入评分"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">简介</label>
+                            <div class="col-md-6">
+                                <textarea class="form-control" name="quote" title="简介" 
+                                placeholder="请输入简介">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">图片</label>
+                            <div class="col-md-6">
+                                <img src="" alt="" class="movie-img">
+                                <input type="file" name="img" title="图片" >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="imply__txt"></span>
+                    <button class="btn btn-default" type="button" data-dismiss="modal">取消</button>
+                    <button class="btn btn-primary btn-save" type="button" >提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    电影
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" id="movieForm" action="" method="post">
+                        <div class="form-group">
+                            <label for="" class="col-md-2 control-label">名称</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="title" title="电影名称" placeholder="请输入电影名称"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-md-2 control-label">导演</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="director" title="导演" placeholder="请输入导演"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">上映年份</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="year" title="上映年份" placeholder="请输入年份"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">评分</label>
+                            <div class="col-md-6">
+                                <input class="form-control" type="text" name="rate" title="评分" placeholder="请输入评分"
+                                    required >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">简介</label>
+                            <div class="col-md-6">
+                                <textarea class="form-control" name="quote" title="简介" placeholder="请输入简介">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">图片</label>
+                            <div class="col-md-6">
+                                <img  class="movie-img" src="" alt="">
+                                <input name='img' type="file" title="图片">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="imply__txt"></span>
+                    <button class="btn btn-default" type="button" data-dismiss="modal">取消</button>
+                    <button class="btn btn-primary btn-save" type="button" >提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function getObjectURL(file){
+        var url = ''; 
+        if(window.createObjectURL){
+            url = window.createObjectURL(file);//IE
+        }else if(window.URL){
+            url = window.URL.createObjectURL(file);//firefox
+        }else if(window.webkitURL){
+            url = window.webkitURL.createObjectURL(file);// chrome webkit
+        }   
+        console.log(url);
+        return url;
+    }
+    var pagination = (function () {
+        var currentPage = 1,
+            // count = 10,
+            pageCount = 0,
+            str = '';
+        var oPagination = document.getElementById('pagination');
+        function bindEvent() {
+            oPagination.addEventListener('click', clickHandler);
+        }
+        function setData(pCount,curPage){
+            pageCount = pCount;
+            currentPage = curPage;
+            render();
+        }
+        function setCount(c) {
+            count = c;
+        }
+        function setCurrentPage(curPage) {
+            currentPage = curPage;
+            movieList.setCurrentPage(currentPage);
+            render(currentPage);
+        }
+        function firstPage() {
+            if (currentPage == 1) {
+                setCurrentPage(currentPage);
+            } else {
+                setCurrentPage(1);
+            }
+        }
+        function prePage() {
+            if (currentPage == 1) {
+                setCurrentPage(currentPage);
+            } else {
+                setCurrentPage(currentPage - 1);
+            }
+        }
+        function nextPage() {
+            if (currentPage == pageCount) {
+                setCurrentPage(currentPage);
+            } else {
+                setCurrentPage(currentPage + 1);
+            }
+        }
+        function lastPage() {
+            if (currentPage == pageCount) {
+                setCurrentPage(currentPage);
+            } else {
+                setCurrentPage(pageCount);
+            }
+        }
+        function clickHandler(e) {
+            e.preventDefault();
+            var tar = e.target;
+            if (tar.nodeName.toLowerCase() != 'ul') {
+                if (tar.classList.contains('page-pre')) {
+                    prePage();
+                } else if (tar.classList.contains('page-next')) {
+                    nextPage();
+                } else if (tar.classList.contains('page-first')) {
+                    firstPage();
+                } else if (tar.classList.contains('page-last')) {
+                    lastPage();
+                } 
+                else {
+                    var currentPage = Number(e.target.innerHTML);
+                    setCurrentPage(currentPage);
+                }
+            }
+        }
+
+        // 显示5个按钮
+        function render(currentPage) {
+            console.log('IN [ ' + arguments.callee.name + ']');
+            var currentPage = currentPage || 1;
+            oPagination.innerHTML = '';
+            if (pageCount != 0) {
+                // 首页
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.innerHTML = '首页';
+                if (currentPage == 1) {
+                    li.classList.add('disabled');
+                }
+                a.classList.add('page-first');
+                li.append(a);
+                oPagination.append(li);
+                // 前一页
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.innerHTML = '&laquo;';
+                // 中间5个按钮
+                if (currentPage == 1) {
+                    li.classList.add('disabled');
+                }
+                a.classList.add('page-pre');
+                li.append(a);
+                oPagination.append(li);
+                if (pageCount <= 5) {
+                    for (var i = 1; i <= pageCount; i++) {
+                        li = document.createElement('li');
+                        a = document.createElement('a');
+                        a.innerHTML = i;
+                        if (currentPage == i) {
+                            li.classList.add('active');
+                        }
+                        li.append(a);
+                        oPagination.append(li);
+                    }
+                }
+                else
+                    if (currentPage < 3) {
+                        for (var i = 1; i <= 5; i++) {
+                            li = document.createElement('li');
+                            a = document.createElement('a');
+                            a.innerHTML = i;
+                            if (currentPage == i) {
+                                li.classList.add('active');
+                            }
+                            li.append(a);
+                            oPagination.append(li);
+                        }
+                    } else if (currentPage >= pageCount - 2) {
+                        for (var i = pageCount - 4; i <= pageCount; i++) {
+                            li = document.createElement('li');
+                            a = document.createElement('a');
+                            a.innerHTML = i;
+                            if (currentPage == i) {
+                                li.classList.add('active');
+                            }
+                            li.append(a);
+                            oPagination.append(li);
+                        }
+                    } else if (currentPage >= 3 && currentPage) {
+                        for (var i = currentPage - 2; i < currentPage + 3; i++) {
+                            li = document.createElement('li');
+                            a = document.createElement('a');
+                            a.innerHTML = i;
+                            if (currentPage == i) {
+                                li.classList.add('active');
+                            }
+                            li.append(a);
+                            oPagination.append(li);
+                        }
+                    }
+                    // 后一页
+                li = document.createElement('li');
+                a = document.createElement('a');
+                a.innerHTML = '&raquo;';
+                a.classList.add('page-next');
+                if (currentPage == pageCount) {
+                    li.classList.add('disabled');
+                }
+                li.append(a);
+                oPagination.append(li);
+                // 尾页
+                li = document.createElement('li');
+                a = document.createElement('a');
+                a.innerHTML = '尾页';
+                a.classList.add('page-last');
+                if (currentPage == pageCount) {
+                    li.classList.add('disabled');
+                }
+                li.append(a);
+                oPagination.append(li);
+            }
+
+        }
+        function init() { 
+            bindEvent();
+            render();
+        }
+        return {
+            init: init,
+            setData: setData,
+        }
+    })()
+    var movieList = (function () {
+        var result = { flag: false, text: '' }
+        var rowCount = 10, pageCount = 0, data;
+        var addBtn;
+        function getDOM(){
+            addBtn = document.querySelector('.btn-add');
+        }
+        function bindEvent(){   
+            addBtn.addEventListener('click',addRow);
+        }
+        function setData(param){
+            data = param;
+            pageCount = Math.ceil(data.length / rowCount); 
+            render(data,0,rowCount);
+            pagination.setData(pageCount,1);
+        }
+        /*
+            每次渲染一页数据
+            data 所有数据
+            start 起始索引
+            count 每页数据行数
+        */
+        function render(data, start, count) {
+            console.log('[table render] ', arguments);
+            var str = '';
+            var data = data.slice(start, start + count);
+            if(data.length == 0){
+                str = '<li ><h4 style="text-align:center">没有相关数据<h4></li>';
+            }else{
+                data.forEach(function (item) {
+                    str +=
+                    `<li>
+                        <div class="item">
+                            <div class="pic">
+                                <em class="">&dot;</em>
+                                <a>
+                                    <img width="100" alt="${item.title}"
+                                        src="${item.img}" class="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="hd">
+                                    <span class="title">${item.title}</span>
+                                </div>
+                                <div class="bd">
+                                    <p class="">
+                                        导演: ${item.director} | 上映年份：${item.year}
+                                    </p>
+                                    <div class="star">
+                                        <span class="rating_num" property="v:average">${item.rate}</span>
+                                    </div> 
+                                    <p class="quote">
+                                        <span class="inq">${item.quote==''?'':'简介：'+item.quote}</span>
+                                    </p>
+                                    <p>
+                                    <a href="javascript:;" class="btn" onclick="movieList.deleteRow(${item.id})">删除</a>
+                                    <a href="javascript:;"  class="btn  btn-default"  onclick="editModal.open(${item.id})">编辑</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    `
+                });
+            }
+            $('#movieList').empty().append(str);
+        }
+        function deleteMovie(movieId){
+            $.ajax({
+                url: '/api/deleteMovie',
+                type: 'post',
+                // contentType:'application/json;charset=utf-8'
+                data: {
+                    movieId
+                },
+                success: function (res) {
+                    if (res.success) {
+                        console.log(res);
+
+                    } else {
+                        console.log('删除失败')
+                    }
+                }
+            })
+        }
+        function getAllMovie() {
+            $.ajax({
+                url: '/api/getAllMovie',
+                type: 'post',
+                success: function (res) {
+                    if (res.success) {
+                        data = res.data;
+                        setData(data);
+                    } else {
+                        console.log('获取电影数据失败')
+                    }
+                }
+            })
+        }
+        function addRow() {
+            $('#movieModal').modal('show');
+        }
+        function updateRow(){
+            check();
+        }
+        function deleteRow(movieId) {
+            console.log('delete ', movieId);
+            deleteMovie(movieId);
+            alert('删除成功');
+            window.location.reload();
+        }
+        function setCurrentPage(curPage) {
+            currentPage = curPage;
+            render(data, (currentPage - 1) * rowCount, rowCount);
+        }
+        function refresh(){
+            getAllMovie();
+        }
+        function init() {
+            getDOM();
+            bindEvent();
+            getAllMovie();
+        }
+        return {
+            init: init,
+            setCurrentPage: setCurrentPage,
+            deleteRow,
+            setData,
+            refresh
+        }
+    })()
+    var movieModal = (function () {
+        var _self,form,saveBtn,oFile,oImg;
+        var movie = {};
+        var result = { flag: false, text: '' };
+        function getDOM(){
+            _self = document.getElementById('movieModal');
+            form = _self.querySelector('#movieForm');
+            saveBtn = _self.querySelector('.btn-save');
+            oFile = form['img'];
+            oImg = form.querySelector('.movie-img');
+        }
+        function bindEvent(){
+            saveBtn.addEventListener('click',saveHandler);
+            oFile.addEventListener('change',fileChange);
+        }
+        function fileChange(){
+            var file = oFile.files[0];
+            if(file){
+                oImg.src = getObjectURL(file);
+            }
+        }
+        function insertMovie() { 
+            var file = oFile.files[0];
+            var formData = new FormData();
+            if(file){
+                // 请求图片的路径
+                movie.img = '/public/images/'+file.name; 
+                formData.append('file',file);
+            }else{
+                movie.img = '';
+            }
+            formData.append('title',movie.title);
+            formData.append('director',movie.director);
+            formData.append('rate',movie.rate);
+            formData.append('year',movie.year);
+            formData.append('quote',movie.quote);
+            formData.append('img',movie.img);
+            // formData.append('id',movie.id);
+            console.log('formdata= ',formData);
+            $.ajax({
+                url:'/api/insertMovie',
+                type:'post',
+                data: formData,
+                contentType:false,
+                processData:false,
+                success:function(res){
+                    console.log(res);
+                    if(res.success){
+                        $('#movieModal').modal('hide');
+                        alert('成功');
+                        window.location.reload();
+                    }else{
+                        alert(res.msg);
+                    }
+                }
+            });
+        }
+        function check() {
+            for (var i = 0; i < form.length; i++) {
+                input = form[i];
+                switch (input.type) {
+                    case 'text':
+                    case 'textarea':
+                        if (input.required && input.value == '') {
+                            result.falg = false;
+                            result.text = input.title + '不能为空';
+                            return;
+                        } else {
+                            movie[input.name] = input.value;
+                        }
+                        break;
+                    case 'select-one':
+                        if (input.required && input.selectedIndex == -1) {
+                            result.falg = false;
+                            result.text = input.title + '不能为空';
+                            return;
+                        } else {
+                            movie[input.name] = input[input.selectedIndex].value;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            result.flag = true;
+            return;
+        }
+        function saveHandler() {    
+            check();
+            if(result.flag){
+                insertMovie();
+                if(result.flag){
+                    $('#movieModal').modal('hide');
+                    alert('添加成功');
+                    form.reset();   
+                    movieList.refresh();
+                }
+            }else{
+                alert(result.text);
+            }
+        }
+        function init(){
+            getDOM();
+            bindEvent();
+        }
+        return {
+            init
+        }
+    })()
+    var editModal = (function(){
+        var _self,form,saveBtn,oFile,oImg;
+        var movie = {};
+        var result = { flag: false, text: '' };
+        function getDOM(){
+            _self = document.getElementById('editModal');
+            form = _self.querySelector('#movieForm');
+            saveBtn = _self.querySelector('.btn-save');
+            oFile = form['img'];
+            oImg = form.querySelector('.movie-img');
+        }
+        function bindEvent(){
+            saveBtn.addEventListener('click',saveHandler);
+            oFile.addEventListener('change',fileChange);
+        }
+        function fileChange(){
+            var file = oFile.files[0];
+            if(file){
+                oImg.src = getObjectURL(file);
+            }
+        }
+        function updateMovie(){
+            var file = oFile.files[0];
+            var formData,oldImg;
+            formData = new FormData();
+            oldImg = movie.img;
+            // if(file){
+            //     movie.img = '/public/images/'+file.name; 
+            // }
+            console.log('movie =',movie);
+            formData.append('oldImg',oldImg);
+            formData.append('file',file);
+            formData.append('movie',JSON.stringify(movie));
+            // 
+            // formData.append('movie.title',movie.title);
+            // formData.append('movie.director',movie.director);
+            // formData.append('movie.rate',movie.rate);
+            // formData.append('movie.year',movie.year);
+            // formData.append('movie.quote',movie.quote);
+            // formData.append('movie.img',movie.img);
+            // formData.append('movie.id',movie.id);
+            $.ajax({
+                url:'/api/updateMovie',
+                type:'post',
+                data: formData,
+                contentType:false,
+                processData:false,
+                success:function(res){
+                    console.log(res);
+                    if(res.success){
+                        $('#editModal').modal('hide');
+                        alert('更新成功');
+                        window.location.reload();
+                    }else{
+                        alert(res.msg);
+                    }
+                }
+            })
+        }
+        function check() {
+            for (var i = 0; i < form.length; i++) {
+                input = form[i];
+                switch (input.type) {
+                    case 'text':
+                    case 'textarea':
+                        if (input.required && input.value == '') {
+                            result.falg = false;
+                            result.text = input.title + '不能为空';
+                            return;
+                        } else {
+                            movie[input.name] = input.value;
+                        }
+                        break;
+                    case 'select-one':
+                        if (input.required && input.selectedIndex == -1) {
+                            result.falg = false;
+                            result.text = input.title + '不能为空';
+                            return;
+                        } else {
+                            movie[input.name] = input[input.selectedIndex].value;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            result.flag = true;
+            return;
+        }
+        function saveHandler(){
+            check();
+            if(result.flag){
+                updateMovie();
+                if(result.flag){
+                    $('#editModal').modal('hide');
+                    form.reset();   
+                    movieList.refresh();
+                }
+            }else{
+                alert(result.text);
+            }
+        }
+        function loadData(data){
+            console.log('row data', data);
+            for (var i = 0; i < form.length; i++) {
+                console.dir(form[i]);
+                var input = form[i];
+                switch (input.type) {
+                    case 'text':
+                    case 'textarea':
+                        input.value = data[input.name];
+                        break;
+                    case 'select-one':
+                        var selectedIndex = [].findIndex.call(input,function(item){
+                                return item.value == data[input.name];
+                        });
+                        input.selectedIndex = selectedIndex;
+                        break;
+                    case 'file':
+                        input.files.length = 1;
+                        input.files[0] = {name:data[input.name]}
+                        oImg.src = data[input.name]
+                        break;
+                }
+            }
+        }
+        function getMovieById(movieId){
+            $.ajax({
+                url:'/api/getMovieById',
+                type:'post',
+                async:false,
+                data:{
+                    movieId:movieId
+                },success:function(res){
+                    movie = res.data;
+                }
+            })
+        }
+        function open(movieId){
+            getMovieById(movieId);
+            loadData(movie);
+            $('#editModal').modal('show');
+        }
+        function init(){
+            getDOM();
+            bindEvent();
+        }
+        return {
+            init,
+            open
+        }
+    })()
+    var searchBox = (function(){
+        var searchBtn,searchInput;
+        function searchMovie(key){
+            $.ajax({
+                url:'/api/searchMovie',
+                type:'post',
+                data:{
+                    key:key
+                },
+                success:function(res){
+                    console.log(res);
+                    if(res.success){
+                        movieList.setData(res.data);
+                    }else{
+                        console.log('搜索失败');
+                    }
+                }
+            })
+        }
+        function keyDownHanlder(e){
+            console.log('keyDownHanlder');
+            if(e.keyCode == 13){
+                console.log('按下回车');
+                console.log(e.target.value);
+                var key = e.target.value;
+                searchMovie(key);
+            }
+        }
+        function clickBtnHandler(e){
+            console.log('clickBtnHandler event = ',e);
+            var key = searchInput.value;
+            searchMovie(key);
+        }
+        function init(){
+            searchBtn = document.querySelector('.btn-search');
+            searchInput = document.querySelector('.movie-search-input');
+            searchBtn.addEventListener('click',clickBtnHandler);
+            searchInput.addEventListener('keydown',keyDownHanlder);
+        }
+        return {
+            init
+        }
+    })()
+    function logout() {
+        $.ajax({
+            url:'/api/logout',
+            type:'post',
+            success:function(res){
+                var res = JSON.parse(res);
+                if(res.success){
+                    alert('注销成功');
+                    window.open('/','_self');
+                }else{
+                    alert('注销失败');
+                }
+            }
+        })
+    }
+    window.onload = function(){
+        searchBox.init();
+        movieList.init();
+        movieModal.init();
+        editModal.init();
+        pagination.init();
+    }
+</script>
+</html>

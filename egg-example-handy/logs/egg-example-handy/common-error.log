@@ -1,0 +1,596 @@
+2019-03-04 17:38:59,279 ERROR 13649 [-/127.0.0.1/-/4ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg@2.19.0@egg/lib/application.js:257:15)
+    at Object.get cookies [as cookies] (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg@2.19.0@egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-security@2.4.3@egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-security@2.4.3@egg-security/app/extend/context.js:97:13)
+    at csrf (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-security@2.4.3@egg-security/lib/middlewares/csrf.js:14:9)
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@4.1.0@koa-compose/index.js:34:12
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+    at session (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-session@5.10.1@koa-session/index.js:41:13)
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@4.1.0@koa-compose/index.js:42:32)
+
+pid: 13649
+hostname: sue-OptiPlex-5060
+
+2019-03-05 09:25:00,412 ERROR 4515 [-/127.0.0.1/-/1ms GET /news] nodejs.ReferenceError: ctx is not defined
+    at NewsController.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/controller/news.js:9:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 4515
+hostname: sue-OptiPlex-5060
+
+2019-03-05 09:25:28,480 ERROR 4515 [-/127.0.0.1/-/1ms GET /news] nodejs.ReferenceError: ctx is not defined
+    at NewsController.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/controller/news.js:9:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 4515
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:36:23,576 ERROR 10739 nodejs.RequestError: getaddrinfo ENOTFOUND undefined undefined:80, GET http://undefined/topstories.json -1 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":0,"errorSocketCount":1,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"undefined:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {} (undefined)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+errno: "ENOTFOUND"
+code: "ENOTFOUND"
+syscall: "getaddrinfo"
+hostname: "undefined"
+host: "undefined"
+port: 80
+name: "RequestError"
+data: undefined
+path: "/topstories.json?orderBy=%22%24key%22&startAt=0&endAt=4"
+status: -1
+headers: {}
+res: {"status":-1,"statusCode":-1,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":52,"keepAliveSocket":false,"requestUrls":["http://undefined/topstories.json"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 10739
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:37:29,220 ERROR 10971 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET https://hacker-news.firebaseio.com/v0/topstories.json -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v0/topstories.json?orderBy=%22%24key%22&startAt=0&endAt=4"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5019,"keepAliveSocket":false,"requestUrls":["https://hacker-news.firebaseio.com/v0/topstories.json"],"timing":null,"remoteAddress":"35.201.97.85","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 10971
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:44:05,437 ERROR 11662 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v2/movie/top250?orderBy=%22%24key%22&startAt=0&endAt=4"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5012,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 11662
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:44:31,796 ERROR 11697 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v2/movie/top250?orderBy=%22%24key%22&startAt=0&endAt=4"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5011,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 11697
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:44:47,447 ERROR 11738 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5006,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 11738
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:44:48,536 ERROR 11738 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 2
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5003,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 11738
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:45:36,873 ERROR 11738 nodejs.ReferenceError: newsList is not defined
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:19:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 11738
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:46:14,112 ERROR 11843 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":1,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5011,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 11843
+hostname: sue-OptiPlex-5060
+
+2019-03-05 10:46:55,364 ERROR 11843 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":2,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 2
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5003,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 11843
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:02:09,260 ERROR 13493 nodejs.ReferenceError: newsList is not defined
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:20:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 13493
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:04:59,487 ERROR 14217 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14217
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:06:15,538 ERROR 14338 [-/127.0.0.1/-/18ms GET /news] nodejs.ReferenceError: page is not defined
+    at NewsController.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/controller/news.js:14:48)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 14338
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:06:39,221 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":3,"createSocketErrorCount":0,"closeSocketCount":1,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":2},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 1
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5008,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:06:39,760 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":3,"createSocketErrorCount":0,"closeSocketCount":2,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 2
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5003,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:06:42,938 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":3,"createSocketErrorCount":0,"closeSocketCount":3,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 3
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5002,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:06:49,923 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":5,"createSocketErrorCount":0,"closeSocketCount":4,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 4
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5002,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:06:53,891 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":5,"createSocketErrorCount":0,"closeSocketCount":5,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 5
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5003,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:07:00,979 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":9,"createSocketErrorCount":0,"closeSocketCount":6,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":3},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 6
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5001,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:07:01,409 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":9,"createSocketErrorCount":0,"closeSocketCount":7,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":2},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 7
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5002,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:07:01,761 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":9,"createSocketErrorCount":0,"closeSocketCount":8,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{"api.douban.com:80:":1},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 8
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5001,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:07:02,017 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":9,"createSocketErrorCount":0,"closeSocketCount":9,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 9
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5002,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:07:28,045 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":10,"createSocketErrorCount":0,"closeSocketCount":10,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 10
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5001,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:09:29,900 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":11,"createSocketErrorCount":0,"closeSocketCount":11,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 11
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5002,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:09:39,667 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":12,"createSocketErrorCount":0,"closeSocketCount":12,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 12
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5001,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:10:24,532 ERROR 14396 nodejs.ConnectionTimeoutError: Connect timeout for 5000ms, GET http://api.douban.com/v2/movie/top250 -2 (connected: false, keepalive socket: false, agent status: {"createSocketCount":13,"createSocketErrorCount":0,"closeSocketCount":13,"errorSocketCount":0,"timeoutSocketCount":0,"requestCount":0,"freeSockets":{},"sockets":{},"requests":{}}, socketHandledRequests: 1, socketHandledResponses: 0)
+headers: {}
+headers: {}
+    at Timeout._onTimeout (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_urllib@2.33.0@urllib/lib/urllib.js:852:15)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ConnectionTimeoutError"
+requestId: 13
+data: undefined
+path: "/v2/movie/top250"
+status: -2
+headers: {}
+res: {"status":-2,"statusCode":-2,"statusMessage":null,"headers":{},"size":0,"aborted":false,"rt":5001,"keepAliveSocket":false,"requestUrls":["http://api.douban.com/v2/movie/top250"],"timing":null,"remoteAddress":"","remotePort":"","socketHandledRequests":1,"socketHandledResponses":0}
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:20:26,520 ERROR 14396 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:20:31,687 ERROR 14396 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 14396
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:21:11,405 ERROR 15249 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15249
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:21:30,975 ERROR 15249 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15249
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:22:14,177 ERROR 15249 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:10:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15249
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:22:38,259 ERROR 15326 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:11:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15326
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:22:48,084 ERROR 15339 nodejs.ReferenceError: movies is not defined
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:13:21)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15339
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:23:08,276 ERROR 15368 nodejs.SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:11:29)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 15368
+hostname: sue-OptiPlex-5060
+
+2019-03-05 11:29:28,774 ERROR 16056 nodejs.ReferenceError: resolve is not defined
+    at NewsService.list (/home/sue/NodeProject/EggDemo/egg-example-handy/app/service/news.js:23:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 16056
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:13:51,592 ERROR 20216 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: v is not defined
+    at AppBootHook.serverDidReady (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:23:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/lifecycle.js:190:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20216
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:13:54,721 ERROR 20239 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at AppBootHook.serverDidReady (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:24:5)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/lifecycle.js:190:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20239
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:13:58,614 ERROR 20250 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at AppBootHook.serverDidReady (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:24:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/lifecycle.js:190:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20250
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:15:23,416 ERROR 20351 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at AppBootHook.serverDidReady (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:24:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/lifecycle.js:190:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20351
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:15:36,334 ERROR 20369 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at AppBootHook.serverDidReady (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:28:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/lifecycle.js:190:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20369
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:15:42,361 ERROR 20388 [-/127.0.0.1/-/0ms GET /] nodejs.ReferenceError: app is not defined
+    at AppBootHook.serverDidReady (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:28:9)
+    at Object.callFn (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/utils/index.js:44:21)
+    at /home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg-core@4.14.1@egg-core/lib/lifecycle.js:190:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 20388
+hostname: sue-OptiPlex-5060
+
+2019-03-05 14:16:17,009 ERROR 20525 nodejs.ReferenceError: req is not defined (uncaughtException throw 1 times on pid:20525)
+    at Application.app.on (/home/sue/NodeProject/EggDemo/egg-example-handy/app.js:34:25)
+    at Application.emit (events.js:189:13)
+    at Application.handleRequest (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_egg@2.19.0@egg/lib/application.js:200:10)
+    at Server.handleRequest (/home/sue/NodeProject/EggDemo/egg-example-handy/node_modules/_koa@2.7.0@koa/lib/application.js:133:19)
+    at Server.emit (events.js:189:13)
+    at parserOnIncoming (_http_server.js:672:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+
+pid: 20525
+hostname: sue-OptiPlex-5060
+

@@ -1,0 +1,138 @@
+@charset "utf-8";
+body{
+    background-color: #e8e8e8;
+    min-height: 100vh;
+    height: 100vh;
+}
+.login-box{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+}
+.login-ctn{
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-hd{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.imly-text{
+    color: #fa9;
+}
+.login-ft{
+    margin: 20px 0;
+    text-align: center;
+}
+.box{
+    width: 92%;
+    margin: auto;
+}
+.nav{
+}
+.toolbar{
+    margin: 10px 0;
+}
+.movie-search-input {
+    display: inline-block;
+    width: 12em;
+    margin-right: 1px;
+}
+.movie-img{
+    width: 100px;
+}
+a:link {
+    color: #37a;
+    text-decoration: none;
+}
+
+a img {
+    border-width: 0;
+    vertical-align: middle;
+}
+
+.grid_view {
+    border-top: 1px dashed #ccc;
+    padding-left: 0;
+}
+
+.grid_view li {
+    overflow: hidden;
+    list-style: none;
+    border-bottom: 1px dashed #ccc;
+    padding: 12px 0;
+    background-color: #fffff0;
+}
+
+.grid_view .pic {
+    color: #bbb;
+    float: left;
+    padding-right: 25px
+}
+
+.grid_view .pic em {
+    float: left;
+    padding: 0 10px;
+    font-size: 40px;
+    color: #666;
+}
+
+.grid_view .pic img {
+	width: 100px;
+}
+
+.grid_view .pic span {
+    text-align: left
+}
+
+.grid_view .pic span img {
+    padding-left: 26px
+}
+
+.grid_view .info {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.grid_view .info h2 {
+    display: inline;
+    font: 14px/150% Arial, Helvetica, sans-serif
+}
+
+.grid_view .info .title {
+    font: 14px/150% Arial, Helvetica, sans-serif
+}
+
+.grid_view .info .title{
+    color: #336
+}
+
+.info p {
+    margin: 10px 0;
+    color: #666;
+
+}
+
+.star .rating_num {
+    color: #e09015;
+    padding: 0 5px 0 0;
+}
+.pagination{
+    margin: auto;
+}
+.page-item{
+    display: inline-block;
+    width: 20px;
+    height: 2em;
+    line-height: 2.2em;
+    color: #5bc0de;    
+    text-align: center;
+}
+.page-item-active{
+    background-color: #fff;
+}

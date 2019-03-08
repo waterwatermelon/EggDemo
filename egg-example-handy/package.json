@@ -1,0 +1,20 @@
+{
+  "name": "egg-example-handy",
+  "version": "1.0.0",
+  "description": "egg demo by hand",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "egg-bin dev"
+  },
+  "author": "sue",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^2.19.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.11.0"
+  }
+}
